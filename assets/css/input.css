@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "modam";
+    src: url("../fonts/modam/Modam-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "modam black";
+    src: url("../fonts/modam/Modam-Black.ttf");
+  }
+
+  @font-face {
+    font-family: "modam bold";
+    src: url("../fonts/modam/Modam-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "modam extrabold";
+    src: url("../fonts/modam/Modam-ExtraBold.ttf");
+  }
+
+  @font-face {
+    font-family: "modam extralight";
+    src: url("../fonts/modam/Modam-ExtraLight.ttf");
+  }
+
+  @font-face {
+    font-family: "modam light";
+    src: url("../fonts/modam/Modam-light.ttf");
+  }
+
+  @font-face {
+    font-family: "modam medium";
+    src: url("../fonts/modam/Modam-Medium.ttf");
+  }
+
+  @font-face {
+    font-family: "modam semibold";
+    src: url("../fonts/modam/Modam-SemiBold.ttf");
+  }
+}

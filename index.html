@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>گیاه لند</title>
+  <link rel="stylesheet" href="./assets/libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/output.css">
+</head>
+<body class="font-modam text-dark">
+  
+  <!-- Header section -->
+  <header class="max-w-[1224px] w-full mx-auto xl:max-w-[1000px] lg:max-w-[700px]">
+    <!-- Navigation bar -->
+    <nav class="my-6 flex justify-between h-12">
+      <!-- Nav right -->
+      <div class="flex gap-8 items-center">
+        <!-- Nav title -->
+        <div>
+          <h2>
+            <a href="#" class="text-green-100 font-bold text-2xl">گیاه لند</a>
+          </h2>
+        </div>
+        <!-- Nav links -->
+        <ul class="flex gap-8 items-center list-image-none text-lg">
+          <li class="text-green-100">
+            <a href="#">
+              صفحه اصلی
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              گیاه پزشک
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              وبلاگ
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              تماس با ما
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              درباره ما
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Nav left -->
+       <div class="flex gap-4">
+        <a href="#" class="h-full border border-green-100 rounded-xl w-12 flex justify-center items-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.755 14.255H14.965L14.685 13.985C15.665 12.845 16.255 11.365 16.255 9.755C16.255 6.165 13.345 3.255 9.755 3.255C6.165 3.255 3.255 6.165 3.255 9.755C3.255 13.345 6.165 16.255 9.755 16.255C11.365 16.255 12.845 15.665 13.985 14.685L14.255 14.965V15.755L19.255 20.745L20.745 19.255L15.755 14.255ZM9.755 14.255C7.26501 14.255 5.255 12.245 5.255 9.755C5.255 7.26501 7.26501 5.255 9.755 5.255C12.245 5.255 14.255 7.26501 14.255 9.755C14.255 12.245 12.245 14.255 9.755 14.255Z" fill="#417F56"/>
+          </svg>            
+        </a>
+        <a href="#" class="h-full border border-green-100 rounded-xl w-12 flex justify-center items-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.5463 13C17.2963 13 17.9563 12.59 18.2963 11.97L21.8763 5.48C22.2463 4.82 21.7663 4 21.0063 4H6.20628L5.26628 2H1.99628V4H3.99628L7.59628 11.59L6.24628 14.03C5.51628 15.37 6.47628 17 7.99628 17H19.9963V15H7.99628L9.09628 13H16.5463ZM7.15628 6H19.3063L16.5463 11H9.52628L7.15628 6ZM7.99628 18C6.89628 18 6.00628 18.9 6.00628 20C6.00628 21.1 6.89628 22 7.99628 22C9.09628 22 9.99628 21.1 9.99628 20C9.99628 18.9 9.09628 18 7.99628 18ZM17.9963 18C16.8963 18 16.0063 18.9 16.0063 20C16.0063 21.1 16.8963 22 17.9963 22C19.0963 22 19.9963 21.1 19.9963 20C19.9963 18.9 19.0963 18 17.9963 18Z" fill="#417F56"/>
+          </svg>            
+        </a>
+        <a href="#" class="h-full border border-green-100 rounded-xl flex justify-center items-center gap-2 py-2 px-4">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 7L9.6 8.4L12.2 11H2V13H12.2L9.6 15.6L11 17L16 12L11 7ZM20 19H12V21H20C21.1 21 22 20.1 22 19V5C22 3.9 21.1 3 20 3H12V5H20V19Z" fill="#417F56"/>
+          </svg>
+          <span class="text-green-100">ورود/ثبت نام</span>            
+        </a>
+       </div>
+    </nav>
+  </header>
+
+  <!-- Horizontal line -->
+  <div class="bg-neutral-500 opacity-50 w-full h-px max-w-[1224px] w-full mx-auto xl:max-w-[1000px] lg:max-w-[700px]"></div>
+
+  <!-- Main section -->
+  <main class="max-w-[1224px] w-full mx-auto xl:max-w-[1000px] lg:max-w-[700px] mt-[76px] mb-[120px]">
+
+    <!-- Intro section -->
+    <section class="flex justify-between gap-[100px]">
+      <!-- Right section -->
+       <div class="w-[539px] flex flex-col justify-center">
+        <h1 class="font-bold text-[40px]">خرید راحت گیاه،با <span class="text-green-100">گیاه لند!</span></h1>
+        <p class="text-xl my-8">با گیاه لند،آنلاین گیاه خودت رو سفارش بده و از تخفیف های ویژه استفاده کن.علاوه بر اینها میتونی به صورت رایگان از گیاه پزشک سایت مشاوره بگیری.</p>
+        <div class="flex gap-[22px] h-14">
+          <a href="#" class="h-full bg-green-100 text-white w-full flex justify-center items-center rounded-xl">گیاهان تخفیف دار</a>
+          <a href="#" class="h-full w-full flex justify-center items-center rounded-xl gap-2 border border-dashed border-green-100">
+            <span class="text-green-100 text-lg">مشاوره با گیاه پزشک</span>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.75 11.5H8.58L14.17 5.91L12.75 4.5L4.75 12.5L12.75 20.5L14.16 19.09L8.58 13.5H20.75V11.5Z" fill="#417F56"/>
+            </svg>              
+          </a>
+        </div>
+        <div class="flex justify-between mt-12">
+          <div class="flex flex-col">
+            <span class="font-medium text-[32px] text-green-400">+۹۴۳</span>
+            <span class="text-xl text-green-500">گیاه خانگی</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-medium text-[32px] text-green-400">+۲۳۴</span>
+            <span class="text-xl text-green-500">گیاه تزئینی</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-medium text-[32px] text-green-400">+۱۲۸</span>
+            <span class="text-xl text-green-500">گیاه کادویی</span>
+          </div>
+        </div>
+       </div>
+       <!-- Left section -->
+       <div>
+        <img src="./assets/img/header-img.png" alt="cover">
+       </div>
+    </section>
+
+    <!-- Product service options section -->
+    <section class="flex justify-between mt-20">
+      <!-- Product service option box -->
+      <div class="max-w-[354px] flex flex-col items-center">
+        <div class="size-20 bg-[#E5F2E9] rounded-full flex justify-center items-center">
+          <img src="./assets/img/svg/credit_card.svg" alt="creditcard">
+        </div>
+        <h3 class="font-semibold text-xl mt-2">پرداخت درب منزل</h3>
+        <p class="text-sm text-center mt-1">برای ایجاد اطمینان خاطر مشتریان،علاوه بر پرداخت آنلاین امکان پرداخت درب منزل وجود دارد</p>
+      </div>
+      <!-- Product service option box -->
+      <div class="max-w-[354px] flex flex-col items-center">
+        <div class="size-20 bg-[#E5F2E9] rounded-full flex justify-center items-center">
+          <img src="./assets/img/svg/verified.svg" alt="verified">
+        </div>
+        <h3 class="font-semibold text-xl mt-2">ضمانت محصول</h3>
+        <p class="text-sm text-center mt-1">به مدت دو هفته پس از دریافت محصول در صورت وجود مشکل میتوانید مرجوع کنید</p>
+      </div>
+      <!-- Product service option box -->
+      <div class="max-w-[354px] flex flex-col items-center">
+        <div class="size-20 bg-[#E5F2E9] rounded-full flex justify-center items-center">
+          <img src="./assets/img/svg/local_shipping.svg" alt="local shipping">
+        </div>
+        <h3 class="font-semibold text-xl mt-2">تحویل درب منزل</h3>
+        <p class="text-sm text-center mt-1">با ایجاد آدرس منزل خود در پروفایل کاربری،محصول خود را درب منزل تحویل بگیرید</p>
+      </div>
+    </section>
+
+    <!-- Plant img section -->
+    <section class="flex gap-6 mt-20 mb-16">
+      <div class="w-full">
+        <img src="./assets/img/flower-frame1.png" alt="plant">
+      </div>
+      <div class="w-full">
+        <img src="./assets/img/flower-frame2.png" alt="plant">
+      </div>
+    </section>
+
+    <!-- Houseplants slider -->
+    <section>
+      <!-- Section title -->
+      <div>
+        <h2 class="text-green-100 font-bold text-2xl">گیاهان آپارتمانی</h2>
+      </div>
+      <!-- Houseplants slider -->
+      <div class="mt-6 relative">
+        <div class="houseplants-swiper overflow-x-hidden">
+          <div class="swiper-wrapper flex gap-6">
+            <!-- Slider items -->
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower1.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی بابا آدم</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۸۵۲,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower2.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی یوکا</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۵۶۰,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower3.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی سانسوریا سبز</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۲۵۰,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower4.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی ساکولنت</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۵۷,۰۰۰  تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower1.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی بابا آدم</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۸۵۲,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower2.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی یوکا</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۵۶۰,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower3.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی سانسوریا سبز</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۲۵۰,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower4.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی ساکولنت</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۵۷,۰۰۰  تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+          </div>
+        </div>
+        <div class="size-12 rounded-full border border-green-100 bg-white absolute top-0 bottom-0 left-[-24px] my-auto z-10 flex justify-center items-center cursor-pointer houseplants-slider-next-btn">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-6">
+            <path d="M15.705 7.91L14.295 6.5L8.29498 12.5L14.295 18.5L15.705 17.09L11.125 12.5L15.705 7.91Z" fill="#417F56"/>
+          </svg>            
+        </div>
+      </div>
+    </section>
+
+    <!-- Products (1) -->
+    <section class="flex justify-between gap-6 my-16">
+      <!-- Product items -->
+      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
+        <img src="./assets/img/products/flower5.png" alt="product" class="w-full brightness-50">
+
+        <div class="absolute bottom-[28px] right-[20px] w-full h-max">
+          <h3 class="text-white font-semibold text-xl">گیاه بونسای</h3>
+          <button class="cursor-pointer text-white border border-white rounded-xl mt-4 flex gap-2 px-4 py-2">
+            <span>خرید گیاه بونسای</span>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.5 11H8.33L13.92 5.41L12.5 4L4.5 12L12.5 20L13.91 18.59L8.33 13H20.5V11Z" fill="white"/>
+            </svg>              
+          </button>
+        </div>
+      </div>
+      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
+        <img src="./assets/img/products/flower6.png" alt="product" class="w-full brightness-50">
+
+        <div class="absolute bottom-[28px] right-[20px] w-full h-max">
+          <h3 class="text-white font-semibold text-xl">گیاه سانسوریا</h3>
+          <button class="cursor-pointer text-white border border-white rounded-xl mt-4 flex gap-2 px-4 py-2">
+            <span>خرید گیاه سانسوریا</span>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.5 11H8.33L13.92 5.41L12.5 4L4.5 12L12.5 20L13.91 18.59L8.33 13H20.5V11Z" fill="white"/>
+            </svg>              
+          </button>
+        </div>
+      </div>
+      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
+        <img src="./assets/img/products/flower7.png" alt="product" class="w-full brightness-50">
+
+        <div class="absolute bottom-[28px] right-[20px] w-full h-max">
+          <h3 class="text-white font-semibold text-xl">گیاه پتوس</h3>
+          <button class="cursor-pointer text-white border border-white rounded-xl mt-4 flex gap-2 px-4 py-2">
+            <span>خرید گیاه پتوس</span>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.5 11H8.33L13.92 5.41L12.5 4L4.5 12L12.5 20L13.91 18.59L8.33 13H20.5V11Z" fill="white"/>
+            </svg>              
+          </button>
+        </div>
+      </div>
+      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
+        <img src="./assets/img/products/flower8.png" alt="product" class="w-full brightness-50">
+
+        <div class="absolute bottom-[28px] right-[20px] w-full h-max">
+          <h3 class="text-white font-semibold text-xl">گیاه پاچیرا</h3>
+          <button class="cursor-pointer text-white border border-white rounded-xl mt-4 flex gap-2 px-4 py-2">
+            <span>خرید گیاه پاچیرا</span>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.5 11H8.33L13.92 5.41L12.5 4L4.5 12L12.5 20L13.91 18.59L8.33 13H20.5V11Z" fill="white"/>
+            </svg>              
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Phytosanitary services section -->
+    <section class="mb-16">
+      <!-- Section title -->
+      <div>
+        <h2 class="font-bold text-2xl text-green-100">خدمات گیاه پزشکی </h2>
+      </div>
+      <!-- Section content -->
+       <div class="mt-8 grid grid-cols-4 justify-between gap-y-6 gap-x-6">
+        <!-- Service items -->
+        <div class="flex gap-2 items-center max-w-[288px]">
+          <!-- Box right -->
+          <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
+            <img src="./assets/img/svg/services/1.svg" alt="plant">
+          </div>
+          <!-- Box left -->
+          <div class="max-w-[211px]"> 
+            <h4 class="font-medium">چک کردن اسید خاک</h4>
+            <p class="text-xs mt-1.5">با استفاده از ابزار مخصوص اسید خاک گیاه چک میشود</p>
+          </div>
+        </div>
+        <div class="flex gap-2 items-center max-w-[288px]">
+          <!-- Box right -->
+          <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
+            <img src="./assets/img/svg/services/2.svg" alt="plant">
+          </div>
+          <!-- Box left -->
+          <div class="max-w-[211px]"> 
+            <h4 class="font-medium">برسی مواد معدنی خاک</h4>
+            <p class="text-xs mt-1.5">یکی از موارد مهم خاک، مقدار مواد معدنی آن است که با دقت برسی میشود</p>
+          </div>
+        </div>
+        <div class="flex gap-2 items-center max-w-[288px]">
+          <!-- Box right -->
+          <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
+            <img src="./assets/img/svg/services/3.svg" alt="plant">
+          </div>
+          <!-- Box left -->
+          <div class="max-w-[211px]"> 
+            <h4 class="font-medium">مشاهده بهترین دما</h4>
+            <p class="text-xs mt-1.5">از موارد مهم برای گیاه مقدار دمای محیط است که باید اندازه گیری شود</p>
+          </div>
+        </div>
+        <div class="flex gap-2 items-center max-w-[288px]">
+          <!-- Box right -->
+          <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
+            <img src="./assets/img/svg/services/4.svg" alt="plant">
+          </div>
+          <!-- Box left -->
+          <div class="max-w-[211px]"> 
+            <h4 class="font-medium">برسی آسیب های احتمالی</h4>
+            <p class="text-xs mt-1.5">تمامی آسیب های احتمالی برسی میگردد تا از وقوع مشکلات آینده جلوگیری شود</p>
+          </div>
+        </div>
+        <div class="flex gap-2 items-center max-w-[288px]">
+          <!-- Box right -->
+          <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
+            <img src="./assets/img/svg/services/5.svg" alt="plant">
+          </div>
+          <!-- Box left -->
+          <div class="max-w-[211px]"> 
+            <h4 class="font-medium">از بین بردن عناصر آلوده خاک</h4>
+            <p class="text-xs mt-1.5">با استفاده از روش های نوین،عناصر آلوده از خاک گیاهان شما جمع آوری میشوند</p>
+          </div>
+        </div>
+        <div class="flex gap-2 items-center max-w-[288px]">
+          <!-- Box right -->
+          <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
+            <img src="./assets/img/svg/services/6.svg" alt="plant">
+          </div>
+          <!-- Box left -->
+          <div class="max-w-[211px]"> 
+            <h4 class="font-medium">برسی ظاهر</h4>
+            <p class="text-xs mt-1.5">ظاهر گیاه بیانگر مسائل مهمی هست.میتوان با مشاهده ظاهر گیاه آفات و ... را متوجه شد</p>
+          </div>
+        </div>
+        <div class="flex gap-2 items-center max-w-[288px]">
+          <!-- Box right -->
+          <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
+            <img src="./assets/img/svg/services/7.svg" alt="plant">
+          </div>
+          <!-- Box left -->
+          <div class="max-w-[211px]"> 
+            <h4 class="font-medium">اندازه گیری EC </h4>
+            <p class="text-xs mt-1.5">این اندازه گیری نشانی از مقدار کل مواد مغذی موجود برای گیاهان می‌دهد</p>
+          </div>
+        </div>
+        <div class="flex gap-2 items-center max-w-[288px]">
+          <!-- Box right -->
+          <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
+            <img src="./assets/img/svg/services/8.svg" alt="plant">
+          </div>
+          <!-- Box left -->
+          <div class="max-w-[211px]"> 
+            <h4 class="font-medium">ارائه مکمل </h4>
+            <p class="text-xs mt-1.5">برای رشد بهتر گیاهان و رفع آفات از مکمل ها میتوان استفاده کرد</p>
+          </div>
+        </div>
+       </div>
+    </section>
+
+    <!-- Ornamental plants section -->
+    <section>
+      <!-- Section title -->
+      <div>
+        <h2 class="text-green-100 font-bold text-2xl">گیاهان تزئینی</h2>
+      </div>
+      <!-- Ornamental slider -->
+      <div class="mt-6 relative">
+        <div class="ornamentalplants-swiper overflow-x-hidden">
+          <div class="swiper-wrapper flex gap-6">
+            <!-- Slider items -->
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower9.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی کراسولا</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۹۰,۰۰۰  تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower10.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی یشم</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۱,۵۰۰,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower11.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی بونسای پاچیرا</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۸۸۰,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower12.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی کراسولا خرفه ای</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۱۶۹,۰۰۰  تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+          </div>
+        </div>
+        <div class="size-12 rounded-full border border-green-100 bg-white absolute top-0 bottom-0 left-[-24px] my-auto z-10 flex justify-center items-center cursor-pointer ornamentalplants-slider-next-btn">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-6">
+            <path d="M15.705 7.91L14.295 6.5L8.29498 12.5L14.295 18.5L15.705 17.09L11.125 12.5L15.705 7.91Z" fill="#417F56"/>
+          </svg>            
+        </div>
+      </div>
+    </section>
+
+    <!-- Products (2) -->
+    <section class="flex justify-between gap-6 my-16">
+      <!-- Product items -->
+      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
+        <img src="./assets/img/products/flower13.png" alt="product" class="w-full brightness-50">
+
+        <div class="absolute bottom-[28px] right-[20px] w-full h-max">
+          <h3 class="text-white font-semibold text-xl">گیاه رزماری</h3>
+          <button class="cursor-pointer text-white border border-white rounded-xl mt-4 flex gap-2 px-4 py-2">
+            <span>خرید گیاه رزماری</span>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.5 11H8.33L13.92 5.41L12.5 4L4.5 12L12.5 20L13.91 18.59L8.33 13H20.5V11Z" fill="white"/>
+            </svg>              
+          </button>
+        </div>
+      </div>
+      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
+        <img src="./assets/img/products/flower14.png" alt="product" class="w-full brightness-50">
+
+        <div class="absolute bottom-[28px] right-[20px] w-full h-max">
+          <h3 class="text-white font-semibold text-xl">گیاه آدنیوم</h3>
+          <button class="cursor-pointer text-white border border-white rounded-xl mt-4 flex gap-2 px-4 py-2">
+            <span>خرید گیاه آدنیوم</span>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.5 11H8.33L13.92 5.41L12.5 4L4.5 12L12.5 20L13.91 18.59L8.33 13H20.5V11Z" fill="white"/>
+            </svg>              
+          </button>
+        </div>
+      </div>
+      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
+        <img src="./assets/img/products/flower15.png" alt="product" class="w-full brightness-50">
+
+        <div class="absolute bottom-[28px] right-[20px] w-full h-max">
+          <h3 class="text-white font-semibold text-xl">گیاه آشیانتوس</h3>
+          <button class="cursor-pointer text-white border border-white rounded-xl mt-4 flex gap-2 px-4 py-2">
+            <span>خرید گیاه آشیانتوس</span>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.5 11H8.33L13.92 5.41L12.5 4L4.5 12L12.5 20L13.91 18.59L8.33 13H20.5V11Z" fill="white"/>
+            </svg>              
+          </button>
+        </div>
+      </div>
+      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
+        <img src="./assets/img/products/flower16.png" alt="product" class="w-full brightness-50">
+
+        <div class="absolute bottom-[28px] right-[20px] w-full h-max">
+          <h3 class="text-white font-semibold text-xl">گیاه آناناسی</h3>
+          <button class="cursor-pointer text-white border border-white rounded-xl mt-4 flex gap-2 px-4 py-2">
+            <span>خرید گیاه آناناسی</span>
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.5 11H8.33L13.92 5.41L12.5 4L4.5 12L12.5 20L13.91 18.59L8.33 13H20.5V11Z" fill="white"/>
+            </svg>              
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gift plants section -->
+    <section>
+      <!-- Section title -->
+      <div>
+        <h2 class="text-green-100 font-bold text-2xl">گیاهان کادویی</h2>
+      </div>
+      <!-- Gift plants slider -->
+      <div class="mt-6 relative">
+        <div class="gift-plants-swiper overflow-x-hidden">
+          <div class="swiper-wrapper flex gap-6">
+            <!-- Slider items -->
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower17.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی بنت قنسول گلیتال</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۱۷۶,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower18.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی آنتوریوم</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۴۵۹,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower19.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی بونسای پاچیرا</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۸۸۰,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower20.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی آنتوریوم</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۴۹۸,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower17.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی بنت قنسول گلیتال</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۱۷۶,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower18.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی آنتوریوم</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۴۵۹,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower19.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی بونسای پاچیرا</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۸۸۰,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+            <div class="swiper-slide max-w-[288px] w-full p-4 border border-neutral-500 rounded-xl">
+              <div>
+                <img src="./assets/img/products/flower20.png" alt="">
+              </div>
+              <h3 class="text-lg mt-6 mb-4">گیاه طبیعی آنتوریوم</h3>
+              <!-- Price -->
+              <div class="flex justify-between">
+                <span class="text-sm">قیمت:</span>
+                <span class="text-lg">۴۹۸,۰۰۰ تومان</span>
+              </div>
+              <button type="button" class="bg-green-100 text-white text-sm w-full h-10 mt-6 rounded-lg">مشاهده بیشتر</button>
+            </div>
+          </div>
+        </div>
+        <div class="size-12 rounded-full border border-green-100 bg-white absolute top-0 bottom-0 left-[-24px] my-auto z-10 flex justify-center items-center cursor-pointer gift-plants-slider-next-btn">
+          <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-6">
+            <path d="M15.705 7.91L14.295 6.5L8.29498 12.5L14.295 18.5L15.705 17.09L11.125 12.5L15.705 7.91Z" fill="#417F56"/>
+          </svg>            
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer section -->
+  <footer class="bg-neutral-200 w-full pt-6 pb-10 text-neutral-1000">
+    <!-- Container -->
+    <div class="max-w-[1224px] w-full mx-auto xl:max-w-[1000px] lg:max-w-[700px] flex justify-between">
+      <!-- Footer right -->
+      <div class="max-w-[494px]">
+        <h3 class="text-2xl font-bold text-green-100">گیاه لند</h3>
+        <p class=" mt-6">گیاه لند سعی بر این دارد با ارائه خدمات نوین در حوزه فروش گیاهان باعث راحتی شما در خرید انواع گیاه شود.تنوع گیاهان و همچنین ایجاد بستری مناسب برای مشاوره با گیاه پزشک از دیگر مزیت های گیاه لند میباشد.</p>
+        <div class="flex justify-between items-center mt-14">
+          <!-- Right -->
+          <div>
+            <span class="text-xl ">تلفن پشتیبانی:  0212۴44</span>
+            <div class="flex gap-6 mt-4">
+              <img src="./assets/img/svg/linkedin.svg" alt="linkedin">
+              <img src="./assets/img/svg/telegram.svg" alt="telegram">
+              <img src="./assets/img/svg/instagram.svg" alt="instagram">
+            </div>
+          </div>
+          <!-- Left -->
+          <div>
+            <img src="./assets/img/e-namad.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- Footer left -->
+      <div class="grid grid-cols-3 justify-between max-w-[600px] w-full">
+        <div>
+          <h3 class="font-semibold text-xl ">آپارتمانی</h3>
+          <ul class="text-xl mt-4 flex flex-col gap-2">
+            <li>
+              <a href="#">بابا آدم</a>
+            </li>
+            <li>
+              <a href="#">یوکا</a>
+            </li>
+            <li>
+              <a href="#">سانسوریا</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl ">تزئینی</h3>
+          <ul class="text-xl mt-4 flex flex-col gap-2">
+            <li>
+              <a href="#">یشم</a>
+            </li>
+            <li>
+              <a href="#">کراسولا</a>
+            </li>
+            <li>
+              <a href="#">کراسولا خرفه ای</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl ">کادویی</h3>
+          <ul class="text-xl mt-4 flex flex-col gap-2">
+            <li>
+              <a href="#">آنتوریوم</a>
+            </li>
+            <li>
+              <a href="#">بونسای</a>
+            </li>
+            <li>
+              <a href="#">بنت قنسول</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
