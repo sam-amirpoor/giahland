@@ -10,9 +10,9 @@
 <body class="font-modam text-dark">
   
   <!-- Header section -->
-  <header class="max-w-[1224px] w-full mx-auto xl:max-w-[1000px] lg:max-w-[700px]">
-    <!-- Navigation bar -->
-    <nav class="my-6 flex justify-between h-12">
+  <header class="border-b border-neutral-500 max-w-[1224px] w-full mx-auto xl:max-w-[1000px] lg:max-w-[700px] md:max-w-[400px] sm:max-w-[328px]">
+    <!-- Desktop Navigation bar -->
+    <nav class="my-6 flex justify-between h-12 lg:hidden">
       <!-- Nav right -->
       <div class="flex gap-8 items-center">
         <!-- Nav title -->
@@ -70,21 +70,79 @@
         </a>
        </div>
     </nav>
+    <!-- Tablet & mobile navigatin bar -->
+    <nav class="hidden lg:block py-3 relative">
+      <!-- Nav content -->
+      <div>
+        <!-- Nav header -->
+        <div class="flex justify-between">
+          <!-- Nav right -->
+          <div class="flex gap-3 items-center">
+            <button id="nav-button" class="z-50 size-11 rounded-lg bg-neutral-300 flex justify-center items-center">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-8">
+                <path d="M2.5 15H17.5V13.3333H2.5V15ZM2.5 10.8333H17.5V9.16667H2.5V10.8333ZM2.5 5V6.66667H17.5V5H2.5Z" fill="#121212"/>
+              </svg>                
+            </button>
+            <h2 class="text-green-100 text-2xl font-medium">گیاه لند</h2>
+          </div>
+          <!-- Nav left -->
+          <div class="flex gap-2">
+            <a href="#" class="size-11 border border-green-100 rounded-xl flex justify-center items-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5463 13C17.2963 13 17.9563 12.59 18.2963 11.97L21.8763 5.48C22.2463 4.82 21.7663 4 21.0063 4H6.20628L5.26628 2H1.99628V4H3.99628L7.59628 11.59L6.24628 14.03C5.51628 15.37 6.47628 17 7.99628 17H19.9963V15H7.99628L9.09628 13H16.5463ZM7.15628 6H19.3063L16.5463 11H9.52628L7.15628 6ZM7.99628 18C6.89628 18 6.00628 18.9 6.00628 20C6.00628 21.1 6.89628 22 7.99628 22C9.09628 22 9.99628 21.1 9.99628 20C9.99628 18.9 9.09628 18 7.99628 18ZM17.9963 18C16.8963 18 16.0063 18.9 16.0063 20C16.0063 21.1 16.8963 22 17.9963 22C19.0963 22 19.9963 21.1 19.9963 20C19.9963 18.9 19.0963 18 17.9963 18Z" fill="#417F56"/>
+              </svg>            
+            </a>
+            <a href="#" class="size-11 border border-green-100 rounded-xl flex justify-center items-center">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.75 14.1667L17.9166 10L13.75 5.83333L12.575 7.00833L14.725 9.16667H7.08331V10.8333H14.725L12.575 12.9917L13.75 14.1667Z" fill="#417F56"/>
+                <path d="M15.4166 15.8333H3.74998V4.16667H15.4166V5.83333H17.0833V4.16667C17.0833 3.25 16.3416 2.5 15.4166 2.5H3.74998C2.83331 2.5 2.08331 3.25 2.08331 4.16667V15.8333C2.08331 16.75 2.83331 17.5 3.74998 17.5H15.4166C16.3416 17.5 17.0833 16.75 17.0833 15.8333V14.1667H15.4166V15.8333Z" fill="#417F56"/>
+              </svg>                       
+            </a>
+          </div>
+        </div>
+        <!-- Search box -->
+        <form action="#" class="relative w-full h-10 bg-neutral-300 rounded-lg overflow-hidden mt-3">
+          <input type="text" placeholder="جستجو گیاه" class="w-full h-full border-none outline-none pr-10 bg-transparent">
+          <button class="absolute top-0 bottom-0 right-[10px]">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.1292 11.8792H12.4709L12.2375 11.6542C13.0542 10.7042 13.5459 9.47086 13.5459 8.12919C13.5459 5.13752 11.1209 2.71252 8.12919 2.71252C5.13752 2.71252 2.71252 5.13752 2.71252 8.12919C2.71252 11.1209 5.13752 13.5459 8.12919 13.5459C9.47086 13.5459 10.7042 13.0542 11.6542 12.2375L11.8792 12.4709V13.1292L16.0459 17.2875L17.2875 16.0459L13.1292 11.8792ZM8.12919 11.8792C6.05419 11.8792 4.37919 10.2042 4.37919 8.12919C4.37919 6.05419 6.05419 4.37919 8.12919 4.37919C10.2042 4.37919 11.8792 6.05419 11.8792 8.12919C11.8792 10.2042 10.2042 11.8792 8.12919 11.8792Z" fill="#717171"/>
+            </svg>              
+          </button>
+        </form>
+      </div>
+      <!-- Nav links -->
+      <ul id="nav-links" class="invisible transition-all opacity-0 absolute bg-neutral-300 w-full top-28 z-50 flex flex-col gap-4 p-8 rounded-2xl">
+        <li>
+          <a href="#" class="text-green-100">صفحه اصلی</a>
+        </li>
+        <li>
+          <a href="#">گیاه پزشک</a>
+        </li>
+        <li>
+          <a href="#">وبلاگ</a>
+        </li>
+        <li>
+          <a href="#">تماس با ما</a>
+        </li>
+        <li>
+          <a href="#">درباره ما</a>
+        </li>
+      </ul>
+      <!-- Screen overlay -->
+       <div id="screen-overlay" class="z-40 invisible opacity-0 transition-all fixed top-0 right-0 w-full h-full bg-black"></div>
+    </nav>
   </header>
 
-  <!-- Horizontal line -->
-  <div class="bg-neutral-500 opacity-50 w-full h-px max-w-[1224px] w-full mx-auto xl:max-w-[1000px] lg:max-w-[700px]"></div>
-
   <!-- Main section -->
-  <main class="max-w-[1224px] w-full mx-auto xl:max-w-[1000px] lg:max-w-[700px] mt-[76px] mb-[120px]">
+  <main class="max-w-[1224px] w-full mx-auto xl:max-w-[1000px] lg:max-w-[700px] mt-[76px] mb-[120px] md:max-w-[400px] sm:max-w-[328px]">
 
     <!-- Intro section -->
-    <section class="flex justify-between gap-[100px]">
+    <section class="flex justify-between gap-[100px] lg:flex-wrap-reverse lg:justify-center">
       <!-- Right section -->
-       <div class="w-[539px] flex flex-col justify-center">
-        <h1 class="font-bold text-[40px]">خرید راحت گیاه،با <span class="text-green-100">گیاه لند!</span></h1>
-        <p class="text-xl my-8">با گیاه لند،آنلاین گیاه خودت رو سفارش بده و از تخفیف های ویژه استفاده کن.علاوه بر اینها میتونی به صورت رایگان از گیاه پزشک سایت مشاوره بگیری.</p>
-        <div class="flex gap-[22px] h-14">
+       <div class="w-[539px] flex flex-col justify-center lg:text-center">
+        <h1 class="font-bold text-[40px] md:text-[38px] sm:text-xl">خرید راحت گیاه،با <span class="text-green-100">گیاه لند!</span></h1>
+        <p class="text-xl my-8 sm:text-lg">با گیاه لند،آنلاین گیاه خودت رو سفارش بده و از تخفیف های ویژه استفاده کن.علاوه بر اینها میتونی به صورت رایگان از گیاه پزشک سایت مشاوره بگیری.</p>
+        <div class="flex gap-[22px] h-14 sm:text-sm sm:gap-3">
           <a href="#" class="h-full bg-green-100 text-white w-full flex justify-center items-center rounded-xl">گیاهان تخفیف دار</a>
           <a href="#" class="h-full w-full flex justify-center items-center rounded-xl gap-2 border border-dashed border-green-100">
             <span class="text-green-100 text-lg">مشاوره با گیاه پزشک</span>
@@ -95,29 +153,48 @@
         </div>
         <div class="flex justify-between mt-12">
           <div class="flex flex-col">
-            <span class="font-medium text-[32px] text-green-400">+۹۴۳</span>
-            <span class="text-xl text-green-500">گیاه خانگی</span>
+            <span class="font-medium text-[32px] text-green-400 sm:text-2xl">+۹۴۳</span>
+            <span class="text-xl text-green-500 sm:text-base">گیاه خانگی</span>
           </div>
           <div class="flex flex-col">
-            <span class="font-medium text-[32px] text-green-400">+۲۳۴</span>
-            <span class="text-xl text-green-500">گیاه تزئینی</span>
+            <span class="font-medium text-[32px] text-green-400 sm:text-2xl">+۲۳۴</span>
+            <span class="text-xl text-green-500 sm:text-base">گیاه تزئینی</span>
           </div>
           <div class="flex flex-col">
-            <span class="font-medium text-[32px] text-green-400">+۱۲۸</span>
-            <span class="text-xl text-green-500">گیاه کادویی</span>
+            <span class="font-medium text-[32px] text-green-400 sm:text-2xl">+۱۲۸</span>
+            <span class="text-xl text-green-500 sm:text-base">گیاه کادویی</span>
           </div>
         </div>
        </div>
        <!-- Left section -->
        <div>
-        <img src="./assets/img/header-img.png" alt="cover">
+        <!-- Desktop -->
+        <img src="./assets/img/header-img.png" alt="cover" class="lg:hidden">
+        <!-- Mobile -->
+        <div class="relative">
+          <img src="./assets/img/header-rounded-img.png" alt="cover" class="hidden lg:block">
+         
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute right-[-21px] bottom-[184px]">
+            <path d="M7.5 0L9.52568 5.47432L15 7.5L9.52568 9.52568L7.5 15L5.47432 9.52568L0 7.5L5.47432 5.47432L7.5 0Z" fill="#417F56"/>
+          </svg>
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute right-[-11px] bottom-[200px]">
+            <path d="M5 0L6.35045 3.64955L10 5L6.35045 6.35045L5 10L3.64955 6.35045L0 5L3.64955 3.64955L5 0Z" fill="#417F56"/>
+          </svg>
+
+          <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-[-21px] bottom-[63px]">
+            <path d="M7.5 0L9.52568 5.47432L15 7.5L9.52568 9.52568L7.5 15L5.47432 9.52568L0 7.5L5.47432 5.47432L7.5 0Z" fill="#417F56"/>
+          </svg>
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute left-[-11px] bottom-[50px]">
+            <path d="M5 0L6.35045 3.64955L10 5L6.35045 6.35045L5 10L3.64955 6.35045L0 5L3.64955 3.64955L5 0Z" fill="#417F56"/>
+          </svg>            
+        </div>
        </div>
     </section>
 
     <!-- Product service options section -->
-    <section class="flex justify-between mt-20">
+    <section class="flex justify-between mt-20 gap-8 md:flex-wrap md:justify-center">
       <!-- Product service option box -->
-      <div class="max-w-[354px] flex flex-col items-center">
+      <div class="max-w-[354px] flex flex-col items-center md:max-w-[280px]">
         <div class="size-20 bg-[#E5F2E9] rounded-full flex justify-center items-center">
           <img src="./assets/img/svg/credit_card.svg" alt="creditcard">
         </div>
@@ -125,7 +202,7 @@
         <p class="text-sm text-center mt-1">برای ایجاد اطمینان خاطر مشتریان،علاوه بر پرداخت آنلاین امکان پرداخت درب منزل وجود دارد</p>
       </div>
       <!-- Product service option box -->
-      <div class="max-w-[354px] flex flex-col items-center">
+      <div class="max-w-[354px] flex flex-col items-center md:max-w-[280px]">
         <div class="size-20 bg-[#E5F2E9] rounded-full flex justify-center items-center">
           <img src="./assets/img/svg/verified.svg" alt="verified">
         </div>
@@ -133,7 +210,7 @@
         <p class="text-sm text-center mt-1">به مدت دو هفته پس از دریافت محصول در صورت وجود مشکل میتوانید مرجوع کنید</p>
       </div>
       <!-- Product service option box -->
-      <div class="max-w-[354px] flex flex-col items-center">
+      <div class="max-w-[354px] flex flex-col items-center md:max-w-[280px]">
         <div class="size-20 bg-[#E5F2E9] rounded-full flex justify-center items-center">
           <img src="./assets/img/svg/local_shipping.svg" alt="local shipping">
         </div>
@@ -143,7 +220,7 @@
     </section>
 
     <!-- Plant img section -->
-    <section class="flex gap-6 mt-20 mb-16">
+    <section class="flex gap-6 mt-20 mb-16 md:flex-wrap">
       <div class="w-full">
         <img src="./assets/img/flower-frame1.png" alt="plant">
       </div>
@@ -261,7 +338,7 @@
             </div>
           </div>
         </div>
-        <div class="size-12 rounded-full border border-green-100 bg-white absolute top-0 bottom-0 left-[-24px] my-auto z-10 flex justify-center items-center cursor-pointer houseplants-slider-next-btn">
+        <div class="size-12 rounded-full border border-green-100 bg-white absolute top-0 bottom-0 left-[-24px] my-auto z-10 flex justify-center items-center cursor-pointer houseplants-slider-next-btn sm:hidden">
           <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-6">
             <path d="M15.705 7.91L14.295 6.5L8.29498 12.5L14.295 18.5L15.705 17.09L11.125 12.5L15.705 7.91Z" fill="#417F56"/>
           </svg>            
@@ -270,10 +347,10 @@
     </section>
 
     <!-- Products (1) -->
-    <section class="flex justify-between gap-6 my-16">
+    <section class="flex justify-between gap-6 my-16 overflow-x-auto scrollbar-none">
       <!-- Product items -->
-      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
-        <img src="./assets/img/products/flower5.png" alt="product" class="w-full brightness-50">
+      <div class="w-[288px] h-[239px] relative overflow-hidden rounded-lg flex-shrink-0">
+        <img src="./assets/img/products/flower5.png" alt="product" class="h-full w-full brightness-50">
 
         <div class="absolute bottom-[28px] right-[20px] w-full h-max">
           <h3 class="text-white font-semibold text-xl">گیاه بونسای</h3>
@@ -285,8 +362,8 @@
           </button>
         </div>
       </div>
-      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
-        <img src="./assets/img/products/flower6.png" alt="product" class="w-full brightness-50">
+      <div class="w-[288px] h-[239px] relative overflow-hidden rounded-lg flex-shrink-0">
+        <img src="./assets/img/products/flower6.png" alt="product" class="h-full w-full brightness-50">
 
         <div class="absolute bottom-[28px] right-[20px] w-full h-max">
           <h3 class="text-white font-semibold text-xl">گیاه سانسوریا</h3>
@@ -298,8 +375,8 @@
           </button>
         </div>
       </div>
-      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
-        <img src="./assets/img/products/flower7.png" alt="product" class="w-full brightness-50">
+      <div class="w-[288px] h-[239px] relative overflow-hidden rounded-lg flex-shrink-0">
+        <img src="./assets/img/products/flower7.png" alt="product" class="h-full w-full brightness-50">
 
         <div class="absolute bottom-[28px] right-[20px] w-full h-max">
           <h3 class="text-white font-semibold text-xl">گیاه پتوس</h3>
@@ -311,8 +388,8 @@
           </button>
         </div>
       </div>
-      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
-        <img src="./assets/img/products/flower8.png" alt="product" class="w-full brightness-50">
+      <div class="w-[288px] h-[239px] relative overflow-hidden rounded-lg flex-shrink-0">
+        <img src="./assets/img/products/flower8.png" alt="product" class="h-full w-full brightness-50">
 
         <div class="absolute bottom-[28px] right-[20px] w-full h-max">
           <h3 class="text-white font-semibold text-xl">گیاه پاچیرا</h3>
@@ -333,9 +410,9 @@
         <h2 class="font-bold text-2xl text-green-100">خدمات گیاه پزشکی </h2>
       </div>
       <!-- Section content -->
-       <div class="mt-8 grid grid-cols-4 justify-between gap-y-6 gap-x-6">
+       <div class="mt-8 grid grid-cols-4 justify-between gap-y-6 gap-x-6 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1">
         <!-- Service items -->
-        <div class="flex gap-2 items-center max-w-[288px]">
+        <div class="flex gap-2 items-center max-w-[288px] md:mx-auto">
           <!-- Box right -->
           <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
             <img src="./assets/img/svg/services/1.svg" alt="plant">
@@ -346,7 +423,7 @@
             <p class="text-xs mt-1.5">با استفاده از ابزار مخصوص اسید خاک گیاه چک میشود</p>
           </div>
         </div>
-        <div class="flex gap-2 items-center max-w-[288px]">
+        <div class="flex gap-2 items-center max-w-[288px] md:mx-auto">
           <!-- Box right -->
           <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
             <img src="./assets/img/svg/services/2.svg" alt="plant">
@@ -357,7 +434,7 @@
             <p class="text-xs mt-1.5">یکی از موارد مهم خاک، مقدار مواد معدنی آن است که با دقت برسی میشود</p>
           </div>
         </div>
-        <div class="flex gap-2 items-center max-w-[288px]">
+        <div class="flex gap-2 items-center max-w-[288px] md:mx-auto">
           <!-- Box right -->
           <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
             <img src="./assets/img/svg/services/3.svg" alt="plant">
@@ -368,7 +445,7 @@
             <p class="text-xs mt-1.5">از موارد مهم برای گیاه مقدار دمای محیط است که باید اندازه گیری شود</p>
           </div>
         </div>
-        <div class="flex gap-2 items-center max-w-[288px]">
+        <div class="flex gap-2 items-center max-w-[288px] md:mx-auto">
           <!-- Box right -->
           <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
             <img src="./assets/img/svg/services/4.svg" alt="plant">
@@ -379,7 +456,7 @@
             <p class="text-xs mt-1.5">تمامی آسیب های احتمالی برسی میگردد تا از وقوع مشکلات آینده جلوگیری شود</p>
           </div>
         </div>
-        <div class="flex gap-2 items-center max-w-[288px]">
+        <div class="flex gap-2 items-center max-w-[288px] md:mx-auto">
           <!-- Box right -->
           <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
             <img src="./assets/img/svg/services/5.svg" alt="plant">
@@ -390,7 +467,7 @@
             <p class="text-xs mt-1.5">با استفاده از روش های نوین،عناصر آلوده از خاک گیاهان شما جمع آوری میشوند</p>
           </div>
         </div>
-        <div class="flex gap-2 items-center max-w-[288px]">
+        <div class="flex gap-2 items-center max-w-[288px] md:mx-auto">
           <!-- Box right -->
           <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
             <img src="./assets/img/svg/services/6.svg" alt="plant">
@@ -401,7 +478,7 @@
             <p class="text-xs mt-1.5">ظاهر گیاه بیانگر مسائل مهمی هست.میتوان با مشاهده ظاهر گیاه آفات و ... را متوجه شد</p>
           </div>
         </div>
-        <div class="flex gap-2 items-center max-w-[288px]">
+        <div class="flex gap-2 items-center max-w-[288px] md:mx-auto">
           <!-- Box right -->
           <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
             <img src="./assets/img/svg/services/7.svg" alt="plant">
@@ -412,7 +489,7 @@
             <p class="text-xs mt-1.5">این اندازه گیری نشانی از مقدار کل مواد مغذی موجود برای گیاهان می‌دهد</p>
           </div>
         </div>
-        <div class="flex gap-2 items-center max-w-[288px]">
+        <div class="flex gap-2 items-center max-w-[288px] md:mx-auto">
           <!-- Box right -->
           <div class="size-[68px] bg-[#E5F2E9] rounded-full flex justify-center items-center">
             <img src="./assets/img/svg/services/8.svg" alt="plant">
@@ -426,7 +503,7 @@
        </div>
     </section>
 
-    <!-- Ornamental plants section -->
+    <!-- Ornamental plants slider -->
     <section>
       <!-- Section title -->
       <div>
@@ -487,7 +564,7 @@
             </div>
           </div>
         </div>
-        <div class="size-12 rounded-full border border-green-100 bg-white absolute top-0 bottom-0 left-[-24px] my-auto z-10 flex justify-center items-center cursor-pointer ornamentalplants-slider-next-btn">
+        <div class="size-12 rounded-full border border-green-100 bg-white absolute top-0 bottom-0 left-[-24px] my-auto z-10 flex justify-center items-center cursor-pointer ornamentalplants-slider-next-btn sm:hidden">
           <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-6">
             <path d="M15.705 7.91L14.295 6.5L8.29498 12.5L14.295 18.5L15.705 17.09L11.125 12.5L15.705 7.91Z" fill="#417F56"/>
           </svg>            
@@ -496,9 +573,9 @@
     </section>
 
     <!-- Products (2) -->
-    <section class="flex justify-between gap-6 my-16">
+    <section class="flex justify-between gap-6 my-16 overflow-x-auto scrollbar-none">
       <!-- Product items -->
-      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
+      <div class="w-[288px] h-[239px] relative overflow-hidden rounded-lg flex-shrink-0">
         <img src="./assets/img/products/flower13.png" alt="product" class="w-full brightness-50">
 
         <div class="absolute bottom-[28px] right-[20px] w-full h-max">
@@ -511,7 +588,7 @@
           </button>
         </div>
       </div>
-      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
+      <div class="w-[288px] h-[239px] relative overflow-hidden rounded-lg flex-shrink-0">
         <img src="./assets/img/products/flower14.png" alt="product" class="w-full brightness-50">
 
         <div class="absolute bottom-[28px] right-[20px] w-full h-max">
@@ -524,7 +601,7 @@
           </button>
         </div>
       </div>
-      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
+      <div class="w-[288px] h-[239px] relative overflow-hidden rounded-lg flex-shrink-0">
         <img src="./assets/img/products/flower15.png" alt="product" class="w-full brightness-50">
 
         <div class="absolute bottom-[28px] right-[20px] w-full h-max">
@@ -537,7 +614,7 @@
           </button>
         </div>
       </div>
-      <div class="max-w-[288px] w-full h-[239px] relative overflow-hidden rounded-lg">
+      <div class="w-[288px] h-[239px] relative overflow-hidden rounded-lg flex-shrink-0">
         <img src="./assets/img/products/flower16.png" alt="product" class="w-full brightness-50">
 
         <div class="absolute bottom-[28px] right-[20px] w-full h-max">
@@ -552,7 +629,7 @@
       </div>
     </section>
 
-    <!-- Gift plants section -->
+    <!-- Gift plants slider -->
     <section>
       <!-- Section title -->
       <div>
@@ -661,7 +738,7 @@
             </div>
           </div>
         </div>
-        <div class="size-12 rounded-full border border-green-100 bg-white absolute top-0 bottom-0 left-[-24px] my-auto z-10 flex justify-center items-center cursor-pointer gift-plants-slider-next-btn">
+        <div class="size-12 rounded-full border border-green-100 bg-white absolute top-0 bottom-0 left-[-24px] my-auto z-10 flex justify-center items-center cursor-pointer gift-plants-slider-next-btn sm:hidden">
           <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-6">
             <path d="M15.705 7.91L14.295 6.5L8.29498 12.5L14.295 18.5L15.705 17.09L11.125 12.5L15.705 7.91Z" fill="#417F56"/>
           </svg>            
@@ -674,19 +751,25 @@
   <!-- Footer section -->
   <footer class="bg-neutral-200 w-full pt-6 pb-10 text-neutral-1000">
     <!-- Container -->
-    <div class="max-w-[1224px] w-full mx-auto xl:max-w-[1000px] lg:max-w-[700px] flex justify-between">
+    <div class="max-w-[1224px] w-full mx-auto xl:max-w-[1000px] lg:max-w-[700px] flex justify-between gap-16 lg:flex-wrap-reverse lg:justify-center md:max-w-[400px] sm:max-w-[328px]">
       <!-- Footer right -->
-      <div class="max-w-[494px]">
+      <div class="max-w-[494px] sm:max-w-[320px]">
         <h3 class="text-2xl font-bold text-green-100">گیاه لند</h3>
         <p class=" mt-6">گیاه لند سعی بر این دارد با ارائه خدمات نوین در حوزه فروش گیاهان باعث راحتی شما در خرید انواع گیاه شود.تنوع گیاهان و همچنین ایجاد بستری مناسب برای مشاوره با گیاه پزشک از دیگر مزیت های گیاه لند میباشد.</p>
-        <div class="flex justify-between items-center mt-14">
+        <div class="flex justify-between items-center mt-14 md:gap-4">
           <!-- Right -->
           <div>
-            <span class="text-xl ">تلفن پشتیبانی:  0212۴44</span>
+            <span class="text-xl sm:text-xs">تلفن پشتیبانی:  0212۴44</span>
             <div class="flex gap-6 mt-4">
-              <img src="./assets/img/svg/linkedin.svg" alt="linkedin">
-              <img src="./assets/img/svg/telegram.svg" alt="telegram">
-              <img src="./assets/img/svg/instagram.svg" alt="instagram">
+              <a href="#">
+                <img src="./assets/img/svg/linkedin.svg" alt="linkedin" class="sm:w-5">
+              </a>
+              <a href="#">
+                <img src="./assets/img/svg/telegram.svg" alt="telegram" class="sm:w-5">
+              </a>
+              <a href="#">
+                <img src="./assets/img/svg/instagram.svg" alt="instagram" class="sm:w-5">
+              </a>
             </div>
           </div>
           <!-- Left -->
@@ -696,10 +779,10 @@
         </div>
       </div>
       <!-- Footer left -->
-      <div class="grid grid-cols-3 justify-between max-w-[600px] w-full">
+      <div class="grid grid-cols-3 justify-between max-w-[600px] w-full lg:max-w-[494px]">
         <div>
-          <h3 class="font-semibold text-xl ">آپارتمانی</h3>
-          <ul class="text-xl mt-4 flex flex-col gap-2">
+          <h3 class="font-semibold text-xl sm:text-xs">آپارتمانی</h3>
+          <ul class="text-xl mt-4 flex flex-col gap-2 sm:text-xs">
             <li>
               <a href="#">بابا آدم</a>
             </li>
@@ -712,8 +795,8 @@
           </ul>
         </div>
         <div>
-          <h3 class="font-semibold text-xl ">تزئینی</h3>
-          <ul class="text-xl mt-4 flex flex-col gap-2">
+          <h3 class="font-semibold text-xl sm:text-xs">تزئینی</h3>
+          <ul class="text-xl mt-4 flex flex-col gap-2 sm:text-xs">
             <li>
               <a href="#">یشم</a>
             </li>
@@ -726,8 +809,8 @@
           </ul>
         </div>
         <div>
-          <h3 class="font-semibold text-xl ">کادویی</h3>
-          <ul class="text-xl mt-4 flex flex-col gap-2">
+          <h3 class="font-semibold text-xl sm:text-xs">کادویی</h3>
+          <ul class="text-xl mt-4 flex flex-col gap-2 sm:text-xs">
             <li>
               <a href="#">آنتوریوم</a>
             </li>
