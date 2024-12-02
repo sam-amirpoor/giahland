@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar-none {
+    scrollbar-width: none; /* For firefox */
+    -ms-overflow-style: none; /* For IE and edge */
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none; /* For chrome and safari */
+  }
+}
+
+
+@layer base {
+  @font-face {
+    font-family: "modam";
+    src: url("../fonts/modam/Modam-Regular.ttf");
+  }
+}
