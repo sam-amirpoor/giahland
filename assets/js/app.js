@@ -1,3 +1,5 @@
+import { showNavLiks } from "./utils.js";
+
 const navLinks = document.getElementById("nav-links");
 const navButton = document.getElementById("nav-button");
 const screenOverlay = document.getElementById("screen-overlay");
@@ -56,24 +58,6 @@ const setSlidesPerView = () => {
       nextEl: '.gift-plants-slider-next-btn',
     }
   });
-}
-
-export const showNavLiks = () => {
-  if (isHide) {
-    navLinks.classList.replace("invisible", "visible");
-    navLinks.classList.replace("opacity-0", "opacity-100");
-    navLinks.classList.replace("top-28", "top-32");
-    screenOverlay.classList.replace("invisible", "visible");
-    screenOverlay.classList.replace("opacity-0", "opacity-50");
-    isHide = false;
-  } else {
-    navLinks.classList.replace("visible", "invisible");
-    navLinks.classList.replace("opacity-100", "opacity-0");
-    navLinks.classList.replace("top-32", "top-28");
-    screenOverlay.classList.replace("visible", "invisible");
-    screenOverlay.classList.replace("opacity-50", "opacity-0");
-    isHide = true;
-  }
 }
 
 window.addEventListener("resize", setSlidesPerView);

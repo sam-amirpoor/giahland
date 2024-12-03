@@ -1,4 +1,4 @@
-import { showNavLiks } from "./app.js";
+import { showNavLiks, showModal, hideModal } from "./utils.js";
 
 const navButton = document.getElementById("nav-button");
 const navLinks = document.getElementById("nav-links");
@@ -15,19 +15,7 @@ const modalConfirm = document.getElementById("modal-confirm");
 const formEl = document.getElementById("form");
 const emailInput = document.getElementById("email-input");
 
-// Display modal box
-const showModal = modalTitle => {
-  modalTitleElem.innerHTML = modalTitle;
-  
-  modalBox.classList.replace("opacity-0", "opacity-100");
-  modalBox.classList.replace("invisible", "visible");
-}
-
-// Hide modal box when button clicked
-const hideModal = () => {
-  modalBox.classList.replace("visible", "invisible");
-  modalBox.classList.replace("opacity-100", "opacity-0");
-}
+let isHide = true;
 
 const emptyInputs = () => {
   passwordInput.value = "";
@@ -41,25 +29,25 @@ const validation = () => {
   let phoneNumber = numberInput.value;
   let isValid = true;
 
-  showModal("اطلاعات شما با موفقیت ثبت شد")  
+  showModal("اطلاعات شما با موفقیت ثبت شد", modalBox, modalTitleElem)  
   
   if (passwordInput.value !== continuePasswordInput.value) {
-    showModal("رمز عبور وارد شده با تکرار آن مطابقت ندارد");
+    showModal("رمز عبور وارد شده با تکرار آن مطابقت ندارد", modalBox, modalTitleElem);
     isValid = false;
   }
   
   if (!passwordInput.value || !continuePasswordInput.value) {
-    showModal("لطفا رمز عبور خود را به درستی وارد کنید");
+    showModal("لطفا رمز عبور خود را به درستی وارد کنید", modalBox, modalTitleElem);
     isValid = false;
   }
   
   if (!emailInput.value) {
-    showModal("لطفا ایمیل خود را به درستی وارد کنید");
+    showModal("لطفا ایمیل خود را به درستی وارد کنید", modalBox, modalTitleElem);
     isValid = false;
   }
 
   if (!regex.test(phoneNumber)) {
-    showModal("لطفا شماره موبایل خود را به درستی وارد کنید");
+    showModal("لطفا شماره موبایل خود را به درستی وارد کنید", modalBox, modalTitleElem);
     isValid = false;
   }
 
@@ -70,8 +58,9 @@ const validation = () => {
 window.addEventListener("load", () => {
   loaderEl.remove();
 })
-navButton.addEventListener("click", showNavLiks)
-
+navButton.addEventListener("click", () => {
+  isHide = showNavLiks(screenOverlay, navLinks, isHide)
+})
 passwordButton.addEventListener("click", () => {
   if(passwordInput.type === "password") {
     passwordInput.type = "text";
@@ -86,8 +75,17 @@ continuePasswordButton.addEventListener("click", () => {
     continuePasswordInput.type = "password";
   }
 })
-modalConfirm.addEventListener("click", hideModal)
+modalConfirm.addEventListener("click", () => {
+  hideModal(modalBox);
+});
 formEl.addEventListener("submit", event => {
   event.preventDefault();
   validation();
 })
+document.addEventListener("click", event => {
+  if (event.target.id === "screen-overlay" || event.target.tagName === "A") {
+    isHide = false;
+    isHide = showNavLiks(screenOverlay, navLinks, isHide);
+  }
+  
+});
