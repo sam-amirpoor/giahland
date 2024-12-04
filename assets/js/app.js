@@ -65,11 +65,13 @@ window.addEventListener("load", () => {
   setSlidesPerView()
   loaderEl.remove();
 });
-navButton.addEventListener("click", showNavLiks);
+navButton.addEventListener("click", () => {
+  isHide = showNavLiks(screenOverlay, navLinks, isHide);
+});
 document.addEventListener("click", event => {
   if (event.target.id === "screen-overlay" || event.target.tagName === "A") {
     isHide = false;
-    showNavLiks();
+    isHide = showNavLiks(screenOverlay, navLinks, isHide);
   }
   
 });
