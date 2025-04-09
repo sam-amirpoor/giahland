@@ -1,0 +1,192 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 32px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.mobileNav {
+  display: none;
+  width: 100%;
+  padding-block: 32px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightNav .links {
+  position: relative;
+}
+
+.rightNav button {
+  background: #efefef;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+
+.rightNav button svg {
+  width: 34px;
+  height: 34px;
+}
+
+.rightNav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.rightNav h2 {
+  font-weight: 700;
+  color: #417f56;
+}
+
+.rightNav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.rightNav ul li a {
+  color: #121212;
+  text-decoration: none;
+}
+
+.rightNav ul li :global(.active) {
+  color: #417f56;
+}
+
+.leftNav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.screenOverlay {
+  position: fixed;
+  inset: 0;
+  background: #00000020;
+}
+
+.links ul {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  transition: all 180ms ease;
+  opacity: 0;
+  visibility: hidden;
+  list-style: none;
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  background: #efefef;
+  padding-block: 28px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 6px 1px #00000030;
+  z-index: 1;
+}
+
+.links ul.active {
+  visibility: visible;
+  opacity: 1;
+  top: 62px;
+}
+
+.navSearch {
+  width: 100%;
+  background: #efefef;
+  height: 40px;
+  margin-top: 12px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.navSearch button {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 12px;
+  margin-block: auto;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navSearch input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #000;
+  padding-right: 40px;
+}
+
+.navSearch input::placeholder {
+  color: #717171;
+}
+
+@media (max-width: 1000px) {
+  .rightNav {
+    gap: 18px;
+  }
+
+  .rightNav ul {
+    gap: 28px;
+  }
+
+  .leftNav {
+    gap: 10px;
+  }
+}
+
+/* Toggle between navbars (desktopNav and mobileNav ) */
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .rightNav button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .rightNav button svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .leftNav :global(.link-primary) {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .leftNav :global(.link-primary) svg {
+    min-width: 20px;
+    min-height: 20px;
+  }
+}

@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+body {
+  font-family: "modam";
+}
+
+.container {
+  max-width: 90%;
+  width: 1224px;
+  margin-inline: auto;
+}
+
+.btn-primary {
+  background: transparent;
+  padding: 12px;
+  border: 1px solid #417f56;
+  outline: none;
+  border-radius: 12px;
+  min-width: 50px;
+  height: 50px;
+}
+
+.link-primary {
+  background: transparent;
+  padding: 12px;
+  border: 1px solid #417f56;
+  outline: none;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #417f56;
+  min-width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+@font-face {
+  font-family: "modam";
+  src: url("./assets/fonts/Modam-Regular.ttf");
+}
