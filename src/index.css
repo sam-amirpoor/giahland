@@ -140,6 +140,46 @@ body {
   width: 50%;
 }
 
+/* Suppor section */
+
+.support {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.support .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 354px;
+}
+
+.support .item .cover {
+  background: #e5f2e9;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.support .item h2 {
+  margin-top: 8px;
+  color: #212121;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.support .item p {
+  margin-top: 4px;
+  text-align: center;
+  color: #505050;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 @font-face {
   font-family: "modam";
   src: url("./assets/fonts/Modam-Regular.ttf");
@@ -172,6 +212,14 @@ body {
     text-align: center;
     margin-top: 40px;
   }
+
+  /* Support section */
+
+  .support {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -198,5 +246,20 @@ body {
 
   .intro .intro-right .values div p {
     font-size: 16px;
+  }
+
+  /* Support section */
+
+  .support .item .cover {
+    width: 72px;
+    height: 72px;
+  }
+
+  .support .item h2 {
+    font-size: 16px;
+  }
+
+  .support .item p {
+    font-size: 12px;
   }
 }
