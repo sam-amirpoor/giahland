@@ -7,13 +7,12 @@
 
 ## 🚀 Features
 
-- **Current MVP**:
-  - Revolutionary Navbar Component
-  - Adaptive Desktop-First Design
+- **Features Under Development**:
+  - Homepage
 - **Coming Soon**:
-  - index page
   - Login & Register page
   - error 404 page
+  - etc
 
 ## 💻 Tech Stack
 
