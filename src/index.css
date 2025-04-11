@@ -180,10 +180,28 @@ body {
   font-weight: 400;
 }
 
+/* Planet images section */
+
+.planet-images {
+  margin-top: 80px;
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  align-items: center;
+}
+
+.planet-images img {
+  width: 49%;
+}
+
+/* Fonts */
+
 @font-face {
   font-family: "modam";
   src: url("./assets/fonts/Modam-Regular.ttf");
 }
+
+/* Break points */
 
 @media (max-width: 1300px) {
   .intro .intro-right h1 {
@@ -219,6 +237,24 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+  }
+
+  .support .item h2 {
+    font-size: 24px;
+  }
+
+  .support .item p {
+    font-size: 18px;
+  }
+
+  /* Planet images section */
+
+  .planet-images {
+    flex-direction: column-reverse;
+  }
+
+  .planet-images img {
+    width: 100%;
   }
 }
 

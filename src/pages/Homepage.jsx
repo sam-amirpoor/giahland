@@ -9,6 +9,7 @@ export default function Homepage() {
         <main>
           <Intro />
           <Support />
+          <PlanetsImages />
         </main>
       </div>
     </>
@@ -157,5 +158,20 @@ function Support() {
         </p>
       </div>
     </section>
+  );
+}
+
+function PlanetsImages() {
+  return (
+    <div className="planet-images">
+      <img
+        src="/images/planet1.png"
+        alt="planet"
+      />
+      <img
+        src="/images/planet2.png"
+        alt="planet"
+      />
+    </div>
   );
 }
