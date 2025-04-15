@@ -62,7 +62,10 @@ export default function Homepage() {
           <Intro />
           <Support />
           <PlanetsImages />
-          <PlanetSlider sliderData={initData} />
+          <PlanetSlider
+            sliderData={initData}
+            title="گیاهان آپارتمانی"
+          />
         </main>
       </div>
     </>

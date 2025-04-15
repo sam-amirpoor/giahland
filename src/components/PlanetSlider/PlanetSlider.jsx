@@ -6,7 +6,7 @@ import PlanetSlide from "../PlanetSlide/PlanetSlide";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 
-function PlanetSlider({ sliderData }) {
+function PlanetSlider({ sliderData, title }) {
   const swiperRef = useRef(null);
 
   const handleSlideNext = () => {
@@ -18,7 +18,7 @@ function PlanetSlider({ sliderData }) {
   return (
     <section className={styles.slider}>
       <div>
-        <h2 className={styles.title}>گیاهان آپارتمانی</h2>
+        <h2 className={styles.title}>{title}</h2>
       </div>
       <Swiper
         spaceBetween={20}
