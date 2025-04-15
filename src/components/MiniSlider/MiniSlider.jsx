@@ -5,7 +5,10 @@ function MiniSlider({ planets }) {
     <div className={styles.miniSlider}>
       {planets.map((data) => {
         return (
-          <div className={styles.slide}>
+          <div
+            className={styles.slide}
+            key={data.id}
+          >
             <img
               src={data.cover}
               alt={data.title}

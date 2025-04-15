@@ -194,6 +194,59 @@ body {
   width: 49%;
 }
 
+/* Planet clinic service section */
+.planet-clinic-service {
+  margin-top: 4rem;
+}
+
+.planet-clinic-service div h2 {
+  color: #417f56;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.planet-clinic-service .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.planet-clinic-service .clinic-service-item {
+  margin-top: 2rem;
+  display: flex;
+  gap: 8px;
+  width: 288px;
+}
+
+.planet-clinic-service .clinic-service-item .cover {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e5f2e9;
+  flex-shrink: 0;
+}
+
+.planet-clinic-service .clinic-service-item .content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.planet-clinic-service .clinic-service-item .content h6 {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.planet-clinic-service .clinic-service-item .content p {
+  color: #353535;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 /* Fonts */
 
 @font-face {
@@ -255,6 +308,30 @@ body {
 
   .planet-images img {
     width: 100%;
+  }
+
+  /* Planet clinic service */
+  .planet-clinic-service .content {
+    margin-top: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  /* Planet clinic service */
+  .planet-clinic-service .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 660px) {
+  /* Planet clinic service */
+  .planet-clinic-service .content {
+    grid-template-columns: 1fr;
+  }
+
+  .planet-clinic-service .clinic-service-item {
+    margin: 0 auto;
   }
 }
 
