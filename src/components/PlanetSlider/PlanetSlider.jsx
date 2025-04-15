@@ -22,11 +22,22 @@ function PlanetSlider({ sliderData, title }) {
       </div>
       <Swiper
         spaceBetween={20}
-        slidesPerView={4}
+        slidesPerView={1}
         loop={true}
         modules={[Navigation]}
         navigation={false}
         ref={swiperRef}
+        breakpoints={{
+          1200: {
+            slidesPerView: 4,
+          },
+          900: {
+            slidesPerView: 3,
+          },
+          600: {
+            slidesPerView: 2,
+          },
+        }}
       >
         {sliderData.map((data) => (
           <SwiperSlide key={data.id}>

@@ -1,17 +1,11 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
 import styles from "./MiniSlider.module.css";
 
 function MiniSlider({ planets }) {
   return (
-    <Swiper
-      spaceBetween={24}
-      slidesPerView={4}
-      className={styles.miniSlider}
-    >
+    <div className={styles.miniSlider}>
       {planets.map((data) => {
         return (
-          <SwiperSlide className={styles.slide}>
+          <div className={styles.slide}>
             <img
               src={data.cover}
               alt={data.title}
@@ -34,10 +28,10 @@ function MiniSlider({ planets }) {
                 </svg>
               </a>
             </div>
-          </SwiperSlide>
+          </div>
         );
       })}
-    </Swiper>
+    </div>
   );
 }
 

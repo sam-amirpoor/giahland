@@ -1,9 +1,17 @@
+.miniSlider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
 .miniSlider .slide {
   position: relative;
   width: 288px;
   height: 240px;
   overflow: hidden;
   border-radius: 8px;
+  flex-shrink: 0;
 }
 .miniSlider .slide::after {
   content: "";
