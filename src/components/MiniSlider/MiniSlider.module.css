@@ -1,0 +1,49 @@
+.miniSlider .slide {
+  position: relative;
+  width: 288px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.miniSlider .slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 50%;
+}
+
+.miniSlider .slide img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.miniSlider .slide div {
+  position: absolute;
+  bottom: 28px;
+  right: 20px;
+  z-index: 1;
+  color: #fff;
+}
+
+.miniSlider .slide div h3 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.miniSlider .slide div a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+}

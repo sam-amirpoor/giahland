@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import PlanetSlider from "../components/PlanetSlider/PlanetSlider";
+import MiniSlider from "../components/MiniSlider/MiniSlider";
 
-const initData = [
+const planetData = [
   {
     id: 1,
     title: "گیاه طبیعی بابا آدم",
@@ -53,6 +54,29 @@ const initData = [
   },
 ];
 
+const planetData2 = [
+  {
+    id: 9,
+    title: "گیاه بونسای",
+    cover: "/images/planets/planet5.png",
+  },
+  {
+    id: 10,
+    title: "گیاه سانسوریا",
+    cover: "/images/planets/planet6.png",
+  },
+  {
+    id: 11,
+    title: "گیاه پتوس",
+    cover: "/images/planets/planet7.png",
+  },
+  {
+    id: 12,
+    title: "گیاه پاچیرا",
+    cover: "/images/planets/planet8.png",
+  },
+];
+
 export default function Homepage() {
   return (
     <>
@@ -63,9 +87,10 @@ export default function Homepage() {
           <Support />
           <PlanetsImages />
           <PlanetSlider
-            sliderData={initData}
+            sliderData={planetData}
             title="گیاهان آپارتمانی"
           />
+          <MiniSlider planets={planetData2} />
         </main>
       </div>
     </>
