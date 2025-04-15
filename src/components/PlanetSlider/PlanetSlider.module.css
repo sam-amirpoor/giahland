@@ -1,0 +1,33 @@
+.slider {
+  user-select: none;
+  margin-top: 64px;
+  position: relative;
+}
+
+.slider > div {
+  margin-bottom: 24px;
+}
+
+.slider div .title {
+  color: #417f56;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.slider button {
+  border: 1px solid #417f56;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-block: auto;
+  left: -24px;
+  z-index: 1;
+  cursor: pointer;
+}

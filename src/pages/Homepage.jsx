@@ -1,5 +1,57 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
+import PlanetSlider from "../components/PlanetSlider/PlanetSlider";
+
+const initData = [
+  {
+    id: 1,
+    title: "گیاه طبیعی بابا آدم",
+    price: 852000,
+    cover: "/images/planets/planet1.png",
+  },
+  {
+    id: 2,
+    title: "گیاه طبیعی یوکا",
+    price: 860000,
+    cover: "/images/planets/planet2.png",
+  },
+  {
+    id: 3,
+    title: "گیاه طبیعی سانسوریا سبز",
+    price: 250000,
+    cover: "/images/planets/planet3.png",
+  },
+  {
+    id: 4,
+    title: "گیاه طبیعی ساکولنت",
+    price: 57000,
+    cover: "/images/planets/planet4.png",
+  },
+  {
+    id: 5,
+    title: "گیاه طبیعی بابا آدم",
+    price: 852000,
+    cover: "/images/planets/planet1.png",
+  },
+  {
+    id: 6,
+    title: "گیاه طبیعی یوکا",
+    price: 860000,
+    cover: "/images/planets/planet2.png",
+  },
+  {
+    id: 7,
+    title: "گیاه طبیعی سانسوریا سبز",
+    price: 250000,
+    cover: "/images/planets/planet3.png",
+  },
+  {
+    id: 8,
+    title: "گیاه طبیعی ساکولنت",
+    price: 57000,
+    cover: "/images/planets/planet4.png",
+  },
+];
 
 export default function Homepage() {
   return (
@@ -10,6 +62,7 @@ export default function Homepage() {
           <Intro />
           <Support />
           <PlanetsImages />
+          <PlanetSlider sliderData={initData} />
         </main>
       </div>
     </>

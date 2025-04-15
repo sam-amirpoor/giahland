@@ -1,0 +1,60 @@
+.slide {
+  max-width: 288px;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.cover {
+  overflow: hidden;
+}
+
+.cover img {
+  transition: all 180ms ease;
+}
+
+.cover:hover img {
+  transform: scale(1.1);
+}
+
+.des {
+  color: #121212;
+  margin-top: 24px;
+}
+
+.des h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.des div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.des div span {
+  font-size: 14px;
+}
+
+.des div p {
+  font-size: 18px;
+}
+
+.des a {
+  background: #417f56;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 24px;
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
