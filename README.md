@@ -3,6 +3,7 @@
 <div align="center">
   <img src="./preview.png" alt="Giahland Logo" width="500"/>
   <p>Where nature meets modern web development</p>
+  <a href="https://giahland.netlify.app/">Click here to see the demo</a>
 </div>
 
 ## 🚀 Features
