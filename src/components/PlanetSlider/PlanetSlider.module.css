@@ -12,9 +12,6 @@
   color: #417f56;
   font-size: 24px;
   font-weight: 700;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-wrap: nowrap;
 }
 
 .slider button {
