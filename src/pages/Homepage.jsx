@@ -79,6 +79,80 @@ const planetData2 = [
   },
 ];
 
+const planetData3 = [
+  {
+    id: 13,
+    title: "گیاه طبیعی کراسولا",
+    price: 90000,
+    cover: "/images/planets/planet9.png",
+  },
+  {
+    id: 14,
+    title: "گیاه یشم",
+    price: 1500000,
+    cover: "/images/planets/planet10.png",
+  },
+  {
+    id: 15,
+    title: "گیاه طبیعی بونسای پاچیرا",
+    price: 880000,
+    cover: "/images/planets/planet11.png",
+  },
+  {
+    id: 16,
+    title: "گیاه کراسولا خرفه ای",
+    price: 169000,
+    cover: "/images/planets/planet12.png",
+  },
+  {
+    id: 17,
+    title: "گیاه طبیعی کراسولا",
+    price: 90000,
+    cover: "/images/planets/planet9.png",
+  },
+  {
+    id: 18,
+    title: "گیاه یشم",
+    price: 1500000,
+    cover: "/images/planets/planet10.png",
+  },
+  {
+    id: 19,
+    title: "گیاه طبیعی بونسای پاچیرا",
+    price: 880000,
+    cover: "/images/planets/planet11.png",
+  },
+  {
+    id: 20,
+    title: "گیاه کراسولا خرفه ای",
+    price: 169000,
+    cover: "/images/planets/planet12.png",
+  },
+];
+
+const planetData4 = [
+  {
+    id: 21,
+    title: "گیاه رزماری",
+    cover: "/images/planets/planet13.png",
+  },
+  {
+    id: 22,
+    title: "گیاه آدنیوم",
+    cover: "/images/planets/planet14.png",
+  },
+  {
+    id: 23,
+    title: "گیاه آشیانتوس",
+    cover: "/images/planets/planet15.png",
+  },
+  {
+    id: 24,
+    title: "گیاه آناناسی",
+    cover: "/images/planets/planet16.png",
+  },
+];
+
 export default function Homepage() {
   return (
     <>
@@ -94,6 +168,11 @@ export default function Homepage() {
           />
           <MiniSlider planets={planetData2} />
           <PlantClinicServices />
+          <PlanetSlider
+            sliderData={planetData3}
+            title="گیاهان تزئینی"
+          />
+          <MiniSlider planets={planetData4} />
         </main>
       </div>
     </>
