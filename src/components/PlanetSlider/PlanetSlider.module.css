@@ -31,3 +31,9 @@
   z-index: 1;
   cursor: pointer;
 }
+
+@media (max-width: 500px) {
+  .slider button {
+    left: 0;
+  }
+}

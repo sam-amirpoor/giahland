@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar/Navbar";
 import PlanetSlider from "../components/PlanetSlider/PlanetSlider";
 import MiniSlider from "../components/MiniSlider/MiniSlider";
 
+import "../assets/css/Homepage.css";
+
 const planetData = [
   {
     id: 1,

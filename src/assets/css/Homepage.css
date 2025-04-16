@@ -1,0 +1,328 @@
+/* Home page */
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 76px;
+}
+
+.intro .intro-right {
+  max-width: 540px;
+}
+
+.intro .intro-right h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #121212;
+}
+
+.intro .intro-right h1 span {
+  color: #417f56;
+}
+
+.intro .intro-right .des {
+  font-size: 20px;
+  font-weight: 400;
+  color: #353535;
+  margin-top: 32px;
+}
+
+.intro .intro-right .buttons {
+  margin-top: 32px;
+  display: flex;
+  gap: 22px;
+}
+
+.intro .intro-right .buttons a {
+  width: 100%;
+  height: 56px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.intro .intro-right .buttons .link-btn {
+  background: #417f56;
+  color: #fff;
+}
+
+.intro .intro-right .buttons .link-btn2 {
+  color: #417f56;
+  border: 1px dashed #417f56;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.intro .intro-right .values {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro .intro-right .values div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.intro .intro-right .values div span {
+  color: #294f36;
+  font-size: 32px;
+}
+
+.intro .intro-right .values div p {
+  color: #21402b;
+  font-size: 20px;
+}
+
+.intro .intro-left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-mobile {
+  display: none;
+  min-width: 260px;
+  width: 50%;
+}
+
+/* Suppor section */
+
+.support {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.support .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 354px;
+  width: 100%;
+}
+
+.support .item .cover {
+  background: #e5f2e9;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.support .item h2 {
+  margin-top: 8px;
+  color: #212121;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.support .item p {
+  margin-top: 4px;
+  text-align: center;
+  color: #505050;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Planet images section */
+
+.planet-images {
+  margin-top: 80px;
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  align-items: center;
+}
+
+.planet-images img {
+  width: 49%;
+}
+
+/* Planet clinic service section */
+.planet-clinic-service {
+  margin-top: 4rem;
+}
+
+.planet-clinic-service div h2 {
+  color: #417f56;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.planet-clinic-service .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.planet-clinic-service .clinic-service-item {
+  margin-top: 2rem;
+  display: flex;
+  gap: 8px;
+  max-width: 288px;
+  width: 100%;
+}
+
+.planet-clinic-service .clinic-service-item .cover {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e5f2e9;
+  flex-shrink: 0;
+}
+
+.planet-clinic-service .clinic-service-item .content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.planet-clinic-service .clinic-service-item .content h6 {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.planet-clinic-service .clinic-service-item .content p {
+  color: #353535;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+/* Break points */
+
+@media (max-width: 1300px) {
+  .intro .intro-right h1 {
+    font-size: 35px;
+  }
+
+  .intro .intro-right {
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-desktop {
+    display: none;
+  }
+
+  .header-mobile {
+    display: block;
+  }
+
+  .intro {
+    flex-direction: column-reverse;
+  }
+
+  .intro .intro-right {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  /* Support section */
+
+  .support {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .support .item h2 {
+    font-size: 24px;
+  }
+
+  .support .item p {
+    font-size: 18px;
+  }
+
+  /* Planet images section */
+
+  .planet-images {
+    flex-direction: column-reverse;
+  }
+
+  .planet-images img {
+    width: 100%;
+  }
+
+  /* Planet clinic service */
+  .planet-clinic-service .content {
+    margin-top: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  /* Planet clinic service */
+  .planet-clinic-service .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 660px) {
+  /* Planet clinic service */
+  .planet-clinic-service .content {
+    grid-template-columns: 1fr;
+  }
+
+  .planet-clinic-service .clinic-service-item {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 460px) {
+  .intro .intro-right h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .intro .intro-right .des {
+    font-size: 14px;
+  }
+
+  .intro .intro-right .buttons {
+    gap: 12px;
+  }
+
+  .intro .intro-right .buttons a {
+    font-size: 14px;
+  }
+
+  .intro .intro-right .values div span {
+    font-size: 24px;
+  }
+
+  .intro .intro-right .values div p {
+    font-size: 16px;
+  }
+
+  /* Support section */
+
+  .support .item .cover {
+    width: 72px;
+    height: 72px;
+  }
+
+  .support .item h2 {
+    font-size: 16px;
+  }
+
+  .support .item p {
+    font-size: 12px;
+  }
+}
