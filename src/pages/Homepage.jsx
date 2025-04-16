@@ -153,6 +153,57 @@ const planetData4 = [
   },
 ];
 
+const planetData5 = [
+  {
+    id: 25,
+    title: "گیاه طبیعی بنت قنسول گلیتال",
+    price: 176000,
+    cover: "/images/planets/planet17.png",
+  },
+  {
+    id: 26,
+    title: "گیاه طبیعی آنتوریوم",
+    price: 459000,
+    cover: "/images/planets/planet18.png",
+  },
+  {
+    id: 27,
+    title: "گیاه طبیعی بونسای پاچیرا",
+    price: 880000,
+    cover: "/images/planets/planet19.png",
+  },
+  {
+    id: 28,
+    title: "گیاه طبیعی آنتوریوم",
+    price: 498000,
+    cover: "/images/planets/planet20.png",
+  },
+  {
+    id: 29,
+    title: "گیاه طبیعی بنت قنسول گلیتال",
+    price: 176000,
+    cover: "/images/planets/planet17.png",
+  },
+  {
+    id: 30,
+    title: "گیاه طبیعی آنتوریوم",
+    price: 459000,
+    cover: "/images/planets/planet18.png",
+  },
+  {
+    id: 31,
+    title: "گیاه طبیعی بونسای پاچیرا",
+    price: 880000,
+    cover: "/images/planets/planet19.png",
+  },
+  {
+    id: 32,
+    title: "گیاه طبیعی آنتوریوم",
+    price: 498000,
+    cover: "/images/planets/planet20.png",
+  },
+];
+
 export default function Homepage() {
   return (
     <>
@@ -173,6 +224,10 @@ export default function Homepage() {
             title="گیاهان تزئینی"
           />
           <MiniSlider planets={planetData4} />
+          <PlanetSlider
+            sliderData={planetData5}
+            title="گیاهان گیاهان کادویی"
+          />
         </main>
       </div>
     </>
