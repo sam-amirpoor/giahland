@@ -1,11 +1,14 @@
+import AOS from "aos";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import PlanetSlider from "../components/PlanetSlider/PlanetSlider";
 import MiniSlider from "../components/MiniSlider/MiniSlider";
-
-import "../assets/css/Homepage.css";
 import Footer from "../components/Footer/Footer";
 
+import "../assets/css/Homepage.css";
+import { useEffect } from "react";
+
+import "aos/dist/aos.css";
 const planetData = [
   {
     id: 1,
@@ -206,12 +209,19 @@ const planetData5 = [
 ];
 
 export default function Homepage() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       <Navbar />
       <div className="container">
         <main>
-          <Intro />
+          <Intro data-aos="fade-up" />
           <Support />
           <PlanetsImages />
           <PlanetSlider
@@ -239,7 +249,10 @@ export default function Homepage() {
 function Intro() {
   return (
     <section className="intro">
-      <div className="intro-right">
+      <div
+        className="intro-right"
+        data-aos="fade-left"
+      >
         <h1>
           خرید راحت گیاه،با <span>گیاه لند!</span>
         </h1>
@@ -291,7 +304,10 @@ function Intro() {
           </div>
         </div>
       </div>
-      <div className="intro-left">
+      <div
+        className="intro-left"
+        data-aos="fade-right"
+      >
         <img
           src="/images/header-desktop.png"
           alt="planet"
@@ -310,7 +326,11 @@ function Intro() {
 function Support() {
   return (
     <section className="support">
-      <div className="item">
+      <div
+        className="item"
+        data-aos="fade-up-left"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="cover">
           <svg
             width="41"
@@ -331,7 +351,11 @@ function Support() {
           درب منزل وجود دارد
         </p>
       </div>
-      <div className="item">
+      <div
+        className="item"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="cover">
           <svg
             width="41"
@@ -356,7 +380,11 @@ function Support() {
           کنید
         </p>
       </div>
-      <div className="item">
+      <div
+        className="item"
+        data-aos="fade-up-right"
+        data-aos-anchor-placement="top-center"
+      >
         <div className="cover">
           <svg
             width="41"
@@ -387,10 +415,14 @@ function PlanetsImages() {
       <img
         src="/images/planet1.png"
         alt="planet"
+        data-aos="fade-left"
+        data-aos-anchor-placement="top-center"
       />
       <img
         src="/images/planet2.png"
         alt="planet"
+        data-aos="fade-right"
+        data-aos-anchor-placement="top-center"
       />
     </div>
   );
@@ -398,7 +430,11 @@ function PlanetsImages() {
 
 function PlantClinicServices() {
   return (
-    <div className="planet-clinic-service">
+    <div
+      className="planet-clinic-service"
+      data-aos="fade-left"
+      data-aos-anchor-placement="top-center"
+    >
       <div>
         <h2>خدمات گیاه پزشکی</h2>
       </div>

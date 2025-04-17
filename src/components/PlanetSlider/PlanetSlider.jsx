@@ -16,7 +16,11 @@ function PlanetSlider({ sliderData, title }) {
   };
 
   return (
-    <section className={styles.slider}>
+    <section
+      className={styles.slider}
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-top"
+    >
       <div>
         <h2 className={styles.title}>{title}</h2>
       </div>

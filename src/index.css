@@ -13,6 +13,7 @@ body {
   --sb-thumb-color-1: #417f56;
   --sb-thumb-color-2: #69be85;
   --sb-size: 10px;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {

@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "react": "^19.0.0",
+    "react-aos": "^1.0.1",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.5.0",
     "swiper": "^11.2.6"

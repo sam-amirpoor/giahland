@@ -2,7 +2,11 @@ import styles from "./MiniSlider.module.css";
 
 function MiniSlider({ planets }) {
   return (
-    <div className={styles.miniSlider}>
+    <div
+      className={styles.miniSlider}
+      data-aos="fade-down"
+      data-aos-anchor-placement="top-top"
+    >
       {planets.map((data) => {
         return (
           <div
