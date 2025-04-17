@@ -329,7 +329,6 @@ function Support() {
       <div
         className="item"
         data-aos="fade-up-left"
-        data-aos-anchor-placement="top-center"
       >
         <div className="cover">
           <svg
@@ -354,7 +353,6 @@ function Support() {
       <div
         className="item"
         data-aos="fade-up"
-        data-aos-anchor-placement="top-center"
       >
         <div className="cover">
           <svg
@@ -383,7 +381,6 @@ function Support() {
       <div
         className="item"
         data-aos="fade-up-right"
-        data-aos-anchor-placement="top-center"
       >
         <div className="cover">
           <svg
@@ -415,14 +412,12 @@ function PlantsImages() {
       <img
         src="/images/plant1.png"
         alt="plant"
-        data-aos="fade-left"
-        data-aos-anchor-placement="top-center"
+        data-aos="fade"
       />
       <img
         src="/images/plant2.png"
         alt="plant"
-        data-aos="fade-right"
-        data-aos-anchor-placement="top-center"
+        data-aos="fade"
       />
     </div>
   );
@@ -433,7 +428,6 @@ function PlantClinicServices() {
     <div
       className="plant-clinic-service"
       data-aos="fade-left"
-      data-aos-anchor-placement="top-center"
     >
       <div>
         <h2>خدمات گیاه پزشکی</h2>
