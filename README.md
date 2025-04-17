@@ -8,19 +8,23 @@
 
 ## 🚀 Features
 
-- **Features Under Development**:
-  - Homepage
-- **Coming Soon**:
-  - Login & Register page
-  - error 404 page
+- **✅ Completed Features**:
+  - `Home` page
+  - `Page not found` page
+- **🛠️ Features Under Development**:
+  - `Login & Register` page
+- **🔜 Coming Soon**:
+  - `user profile` page
   - etc
 
 ## 💻 Tech Stack
 
 - React
 - React Router
-- Vite
+- React awesome reveal
+- Swiper
 - CSS Modules
+- Vite
 - ESLint
 
 ## 🌱 Getting Started
