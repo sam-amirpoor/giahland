@@ -328,7 +328,7 @@ function Support() {
     <section className="support">
       <div
         className="item"
-        data-aos="fade-up-left"
+        data-aos="fade-up"
       >
         <div className="cover">
           <svg
@@ -352,7 +352,7 @@ function Support() {
       </div>
       <div
         className="item"
-        data-aos="fade-up"
+        data-aos="fade-down"
       >
         <div className="cover">
           <svg
@@ -380,7 +380,7 @@ function Support() {
       </div>
       <div
         className="item"
-        data-aos="fade-up-right"
+        data-aos="fade-up"
       >
         <div className="cover">
           <svg
