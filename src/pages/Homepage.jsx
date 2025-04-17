@@ -237,7 +237,7 @@ export default function Homepage() {
           <MiniSlider plants={plantData4} />
           <PlantSlider
             sliderData={plantData5}
-            title="گیاهان گیاهان کادویی"
+            title="گیاهان کادویی"
           />
         </main>
       </div>
