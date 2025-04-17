@@ -4,6 +4,7 @@ import PlanetSlider from "../components/PlanetSlider/PlanetSlider";
 import MiniSlider from "../components/MiniSlider/MiniSlider";
 
 import "../assets/css/Homepage.css";
+import Footer from "../components/Footer/Footer";
 
 const planetData = [
   {
@@ -230,6 +231,7 @@ export default function Homepage() {
           />
         </main>
       </div>
+      <Footer />
     </>
   );
 }
