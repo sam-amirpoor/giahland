@@ -16,10 +16,7 @@ function PlantSlider({ sliderData, title }) {
   };
 
   return (
-    <section
-      className={styles.slider}
-      data-aos="fade-up"
-    >
+    <section className={styles.slider}>
       <div>
         <h2 className={styles.title}>{title}</h2>
       </div>

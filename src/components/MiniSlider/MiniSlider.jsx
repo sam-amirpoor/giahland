@@ -2,10 +2,7 @@ import styles from "./MiniSlider.module.css";
 
 function MiniSlider({ plants }) {
   return (
-    <div
-      className={styles.miniSlider}
-      data-aos="fade-down"
-    >
+    <div className={styles.miniSlider}>
       {plants.map((data) => {
         return (
           <div
