@@ -1,13 +1,13 @@
 import styles from "./MiniSlider.module.css";
 
-function MiniSlider({ planets }) {
+function MiniSlider({ plants }) {
   return (
     <div
       className={styles.miniSlider}
       data-aos="fade-down"
       data-aos-anchor-placement="top-top"
     >
-      {planets.map((data) => {
+      {plants.map((data) => {
         return (
           <div
             className={styles.slide}

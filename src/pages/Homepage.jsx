@@ -1,7 +1,7 @@
 import AOS from "aos";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
-import PlanetSlider from "../components/PlanetSlider/PlanetSlider";
+import PlantSlider from "../components/PlantSlider/PlantSlider";
 import MiniSlider from "../components/MiniSlider/MiniSlider";
 import Footer from "../components/Footer/Footer";
 
@@ -9,202 +9,202 @@ import "../assets/css/Homepage.css";
 import { useEffect } from "react";
 
 import "aos/dist/aos.css";
-const planetData = [
+const plantData = [
   {
     id: 1,
     title: "گیاه طبیعی بابا آدم",
     price: 852000,
-    cover: "/images/planets/planet1.png",
+    cover: "/images/plants/plant1.png",
   },
   {
     id: 2,
     title: "گیاه طبیعی یوکا",
     price: 860000,
-    cover: "/images/planets/planet2.png",
+    cover: "/images/plants/plant2.png",
   },
   {
     id: 3,
     title: "گیاه طبیعی سانسوریا سبز",
     price: 250000,
-    cover: "/images/planets/planet3.png",
+    cover: "/images/plants/plant3.png",
   },
   {
     id: 4,
     title: "گیاه طبیعی ساکولنت",
     price: 57000,
-    cover: "/images/planets/planet4.png",
+    cover: "/images/plants/plant4.png",
   },
   {
     id: 5,
     title: "گیاه طبیعی بابا آدم",
     price: 852000,
-    cover: "/images/planets/planet1.png",
+    cover: "/images/plants/plant1.png",
   },
   {
     id: 6,
     title: "گیاه طبیعی یوکا",
     price: 860000,
-    cover: "/images/planets/planet2.png",
+    cover: "/images/plants/plant2.png",
   },
   {
     id: 7,
     title: "گیاه طبیعی سانسوریا سبز",
     price: 250000,
-    cover: "/images/planets/planet3.png",
+    cover: "/images/plants/plant3.png",
   },
   {
     id: 8,
     title: "گیاه طبیعی ساکولنت",
     price: 57000,
-    cover: "/images/planets/planet4.png",
+    cover: "/images/plants/plant4.png",
   },
 ];
 
-const planetData2 = [
+const plantData2 = [
   {
     id: 9,
     title: "گیاه بونسای",
-    cover: "/images/planets/planet5.png",
+    cover: "/images/plants/plant5.png",
   },
   {
     id: 10,
     title: "گیاه سانسوریا",
-    cover: "/images/planets/planet6.png",
+    cover: "/images/plants/plant6.png",
   },
   {
     id: 11,
     title: "گیاه پتوس",
-    cover: "/images/planets/planet7.png",
+    cover: "/images/plants/plant7.png",
   },
   {
     id: 12,
     title: "گیاه پاچیرا",
-    cover: "/images/planets/planet8.png",
+    cover: "/images/plants/plant8.png",
   },
 ];
 
-const planetData3 = [
+const plantData3 = [
   {
     id: 13,
     title: "گیاه طبیعی کراسولا",
     price: 90000,
-    cover: "/images/planets/planet9.png",
+    cover: "/images/plants/plant9.png",
   },
   {
     id: 14,
     title: "گیاه یشم",
     price: 1500000,
-    cover: "/images/planets/planet10.png",
+    cover: "/images/plants/plant10.png",
   },
   {
     id: 15,
     title: "گیاه طبیعی بونسای پاچیرا",
     price: 880000,
-    cover: "/images/planets/planet11.png",
+    cover: "/images/plants/plant11.png",
   },
   {
     id: 16,
     title: "گیاه کراسولا خرفه ای",
     price: 169000,
-    cover: "/images/planets/planet12.png",
+    cover: "/images/plants/plant12.png",
   },
   {
     id: 17,
     title: "گیاه طبیعی کراسولا",
     price: 90000,
-    cover: "/images/planets/planet9.png",
+    cover: "/images/plants/plant9.png",
   },
   {
     id: 18,
     title: "گیاه یشم",
     price: 1500000,
-    cover: "/images/planets/planet10.png",
+    cover: "/images/plants/plant10.png",
   },
   {
     id: 19,
     title: "گیاه طبیعی بونسای پاچیرا",
     price: 880000,
-    cover: "/images/planets/planet11.png",
+    cover: "/images/plants/plant11.png",
   },
   {
     id: 20,
     title: "گیاه کراسولا خرفه ای",
     price: 169000,
-    cover: "/images/planets/planet12.png",
+    cover: "/images/plants/plant12.png",
   },
 ];
 
-const planetData4 = [
+const plantData4 = [
   {
     id: 21,
     title: "گیاه رزماری",
-    cover: "/images/planets/planet13.png",
+    cover: "/images/plants/plant13.png",
   },
   {
     id: 22,
     title: "گیاه آدنیوم",
-    cover: "/images/planets/planet14.png",
+    cover: "/images/plants/plant14.png",
   },
   {
     id: 23,
     title: "گیاه آشیانتوس",
-    cover: "/images/planets/planet15.png",
+    cover: "/images/plants/plant15.png",
   },
   {
     id: 24,
     title: "گیاه آناناسی",
-    cover: "/images/planets/planet16.png",
+    cover: "/images/plants/plant16.png",
   },
 ];
 
-const planetData5 = [
+const plantData5 = [
   {
     id: 25,
     title: "گیاه طبیعی بنت قنسول گلیتال",
     price: 176000,
-    cover: "/images/planets/planet17.png",
+    cover: "/images/plants/plant17.png",
   },
   {
     id: 26,
     title: "گیاه طبیعی آنتوریوم",
     price: 459000,
-    cover: "/images/planets/planet18.png",
+    cover: "/images/plants/plant18.png",
   },
   {
     id: 27,
     title: "گیاه طبیعی بونسای پاچیرا",
     price: 880000,
-    cover: "/images/planets/planet19.png",
+    cover: "/images/plants/plant19.png",
   },
   {
     id: 28,
     title: "گیاه طبیعی آنتوریوم",
     price: 498000,
-    cover: "/images/planets/planet20.png",
+    cover: "/images/plants/plant20.png",
   },
   {
     id: 29,
     title: "گیاه طبیعی بنت قنسول گلیتال",
     price: 176000,
-    cover: "/images/planets/planet17.png",
+    cover: "/images/plants/plant17.png",
   },
   {
     id: 30,
     title: "گیاه طبیعی آنتوریوم",
     price: 459000,
-    cover: "/images/planets/planet18.png",
+    cover: "/images/plants/plant18.png",
   },
   {
     id: 31,
     title: "گیاه طبیعی بونسای پاچیرا",
     price: 880000,
-    cover: "/images/planets/planet19.png",
+    cover: "/images/plants/plant19.png",
   },
   {
     id: 32,
     title: "گیاه طبیعی آنتوریوم",
     price: 498000,
-    cover: "/images/planets/planet20.png",
+    cover: "/images/plants/plant20.png",
   },
 ];
 
@@ -223,20 +223,20 @@ export default function Homepage() {
         <main>
           <Intro data-aos="fade-up" />
           <Support />
-          <PlanetsImages />
-          <PlanetSlider
-            sliderData={planetData}
+          <PlantsImages />
+          <PlantSlider
+            sliderData={plantData}
             title="گیاهان آپارتمانی"
           />
-          <MiniSlider planets={planetData2} />
+          <MiniSlider plants={plantData2} />
           <PlantClinicServices />
-          <PlanetSlider
-            sliderData={planetData3}
+          <PlantSlider
+            sliderData={plantData3}
             title="گیاهان تزئینی"
           />
-          <MiniSlider planets={planetData4} />
-          <PlanetSlider
-            sliderData={planetData5}
+          <MiniSlider plants={plantData4} />
+          <PlantSlider
+            sliderData={plantData5}
             title="گیاهان گیاهان کادویی"
           />
         </main>
@@ -310,12 +310,12 @@ function Intro() {
       >
         <img
           src="/images/header-desktop.png"
-          alt="planet"
+          alt="plant"
           className="header-desktop"
         />
         <img
           src="/images/header-mobile.png"
-          alt="planet"
+          alt="plant"
           className="header-mobile"
         />
       </div>
@@ -409,18 +409,18 @@ function Support() {
   );
 }
 
-function PlanetsImages() {
+function PlantsImages() {
   return (
-    <div className="planet-images">
+    <div className="plant-images">
       <img
-        src="/images/planet1.png"
-        alt="planet"
+        src="/images/plant1.png"
+        alt="plant"
         data-aos="fade-left"
         data-aos-anchor-placement="top-center"
       />
       <img
-        src="/images/planet2.png"
-        alt="planet"
+        src="/images/plant2.png"
+        alt="plant"
         data-aos="fade-right"
         data-aos-anchor-placement="top-center"
       />
@@ -431,7 +431,7 @@ function PlanetsImages() {
 function PlantClinicServices() {
   return (
     <div
-      className="planet-clinic-service"
+      className="plant-clinic-service"
       data-aos="fade-left"
       data-aos-anchor-placement="top-center"
     >

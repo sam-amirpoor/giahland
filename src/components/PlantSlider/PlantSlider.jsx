@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import styles from "./PlanetSlider.module.css";
-import PlanetSlide from "../PlanetSlide/PlanetSlide";
+import styles from "./PlantSlider.module.css";
+import PlantSlide from "../PlantSlide/PlantSlide";
 import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 
-function PlanetSlider({ sliderData, title }) {
+function PlantSlider({ sliderData, title }) {
   const swiperRef = useRef(null);
 
   const handleSlideNext = () => {
@@ -45,7 +45,7 @@ function PlanetSlider({ sliderData, title }) {
       >
         {sliderData.map((data) => (
           <SwiperSlide key={data.id}>
-            <PlanetSlide planet={data} />
+            <PlantSlide plant={data} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -70,4 +70,4 @@ function PlanetSlider({ sliderData, title }) {
   );
 }
 
-export default PlanetSlider;
+export default PlantSlider;
