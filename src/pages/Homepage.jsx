@@ -251,7 +251,7 @@ function Intro() {
     <section className="intro">
       <div
         className="intro-right"
-        data-aos="fade-left"
+        data-aos="fade-up"
       >
         <h1>
           خرید راحت گیاه،با <span>گیاه لند!</span>
@@ -306,7 +306,7 @@ function Intro() {
       </div>
       <div
         className="intro-left"
-        data-aos="fade-right"
+        data-aos="fade-down"
       >
         <img
           src="/images/header-desktop.png"
