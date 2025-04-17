@@ -9,6 +9,35 @@
 
 body {
   font-family: "modam";
+  --sb-track-color: #e6e6e6;
+  --sb-thumb-color-1: #417f56;
+  --sb-thumb-color-2: #69be85;
+  --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    to bottom,
+    var(--sb-thumb-color-1),
+    var(--sb-thumb-color-2)
+  );
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
 }
 
 .container {
