@@ -19,7 +19,7 @@ function PlantSlider({ sliderData, title }) {
     <section
       className={styles.slider}
       data-aos="fade-up"
-      data-aos-anchor-placement="top-top"
+      data-aos-anchor-placement="top-center"
     >
       <div>
         <h2 className={styles.title}>{title}</h2>

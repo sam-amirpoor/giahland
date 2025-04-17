@@ -5,7 +5,6 @@ function MiniSlider({ plants }) {
     <div
       className={styles.miniSlider}
       data-aos="fade-down"
-      data-aos-anchor-placement="top-top"
     >
       {plants.map((data) => {
         return (

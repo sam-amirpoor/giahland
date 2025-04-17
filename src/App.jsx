@@ -1,16 +1,22 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Homepage from "./pages/Homepage";
+import { lazy, Suspense } from "react";
+
+const Homepage = lazy(() => import("./pages/Homepage"));
+
+import ScreenLoader from "./components/ScreenLoader/ScreenLoader";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={<Homepage />}
-        />
-      </Routes>
-    </BrowserRouter>
+    <Suspense fallback={<ScreenLoader />}>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={<Homepage />}
+          />
+        </Routes>
+      </BrowserRouter>
+    </Suspense>
   );
 }
 
