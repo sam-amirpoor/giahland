@@ -1,0 +1,38 @@
+.alert {
+  position: fixed;
+  top: 10px;
+  right: 0;
+  left: 0;
+  margin-inline: auto;
+  max-width: 400px;
+  width: 90%;
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: -1px 1px 10px 0 #00000050;
+  transition: all 180ms ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.active {
+  top: 16px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.alert button {
+  margin-top: 18px;
+  border: none;
+  outline: none;
+  background: #417f56;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 180ms ease;
+}
+
+.alert button:hover {
+  background: #36734a;
+}

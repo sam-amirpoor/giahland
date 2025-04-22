@@ -1,40 +1,40 @@
-.content {
+.page-not-found-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.content img {
+.page-not-found-content img {
   max-width: 610px;
 }
 
-.content p {
+.page-not-found-content p {
   font-size: 20px;
   font-weight: 400;
 }
 
-.content a {
+.page-not-found-content a {
   margin-top: 1rem;
 }
 
 @media (max-width: 900px) {
-  .content img {
+  .page-not-found-content img {
     width: 500px;
   }
 }
 
 @media (max-width: 700px) {
-  .content img {
+  .page-not-found-content img {
     width: 400px;
   }
 }
 
 @media (max-width: 500px) {
-  .content img {
+  .page-not-found-content img {
     width: 300px;
   }
 
-  .content p {
+  .page-not-found-content p {
     font-size: 16px;
   }
 }

@@ -1,0 +1,103 @@
+.auth {
+  display: flex;
+}
+
+.auth .content,
+.auth .background {
+  width: 50%;
+}
+
+.auth .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth .content .form {
+  max-width: 520px;
+  width: 100%;
+}
+
+.auth .content .form h5 {
+  color: #121212;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.auth .content .form .inputs {
+  margin-top: 32px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.auth .content .form .inputs .input-box {
+  height: 56px;
+  width: 100%;
+  position: relative;
+  border: 1px solid #cbcbcb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.auth .content .form .inputs .input-box .input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-right: 44px;
+  color: #121212;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.auth .content .form .input .input-box .input::placeholder {
+  color: #717171;
+}
+
+.auth .content .form .inputs .input-box svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-block: auto;
+}
+
+.auth .content .form .inputs .input-box .icon {
+  right: 14px;
+}
+
+.auth .content .form .inputs .input-box .eye {
+  left: 16px;
+  cursor: pointer;
+}
+
+.auth .content .form .submit {
+  background: #417f56;
+  color: #fff;
+  width: 100%;
+  height: 56px;
+  margin-top: 32px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.auth .content .form .text {
+  color: #121212;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.auth .content .form .text a {
+  color: #417f56;
+  text-decoration: none;
+}
+
+.auth .background {
+  background-image: url("/images/Auth-background.png");
+  object-fit: cover;
+  height: 100vh;
+}

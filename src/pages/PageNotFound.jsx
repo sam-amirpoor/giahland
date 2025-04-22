@@ -7,7 +7,7 @@ function PageNotFound() {
   return (
     <>
       <Navbar />
-      <div className="content">
+      <div className="page-not-found-content">
         <img
           src="/images/page-not-found.png"
           alt="page not found"

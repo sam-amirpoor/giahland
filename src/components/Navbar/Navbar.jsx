@@ -73,7 +73,7 @@ function Navbar() {
           {/* Login link */}
 
           <Link
-            to="#"
+            to="/register"
             className="link-primary"
           >
             <svg
