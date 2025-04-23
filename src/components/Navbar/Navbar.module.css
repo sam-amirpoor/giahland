@@ -1,3 +1,7 @@
+.navContainer {
+  background: #fff;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;

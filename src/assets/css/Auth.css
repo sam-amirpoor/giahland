@@ -1,5 +1,10 @@
+.navbar-container {
+  display: none;
+}
+
 .auth {
   display: flex;
+  background: #fff;
 }
 
 .auth .content,
@@ -15,7 +20,7 @@
 
 .auth .content .form {
   max-width: 520px;
-  width: 100%;
+  width: 90%;
 }
 
 .auth .content .form h5 {
@@ -100,4 +105,48 @@
   background-image: url("/images/Auth-background.png");
   object-fit: cover;
   height: 100vh;
+}
+
+@media (max-width: 900px) {
+  .navbar-container {
+    display: block;
+  }
+
+  .background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    width: 100vw !important;
+    background-position: center;
+  }
+
+  .auth .content {
+    position: fixed;
+    background: #fff;
+    bottom: 0;
+    width: 100vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 2rem;
+  }
+
+  .auth .content .form h5 {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    line-height: 180%;
+    margin-top: 12px;
+  }
+
+  .auth .content .form .inputs {
+    margin-top: 24px;
+  }
+
+  .auth .content .form .inputs .input-box {
+    height: 48px;
+  }
+
+  .auth .content .form .submit {
+    height: 40px;
+  }
 }
