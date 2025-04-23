@@ -212,35 +212,53 @@ export default function Homepage() {
       <Navbar />
       <div className="container">
         <main>
-          <Fade direction="down">
+          <Fade
+            direction="down"
+            triggerOnce
+          >
             <Intro />
           </Fade>
           <Support />
-          <Fade>
+          <Fade triggerOnce>
             <PlantsImages />
           </Fade>
-          <Fade direction="down">
+          <Fade
+            direction="down"
+            triggerOnce
+          >
             <PlantSlider
               sliderData={plantData}
               title="گیاهان آپارتمانی"
             />
           </Fade>
-          <Fade direction="down">
+          <Fade
+            direction="down"
+            triggerOnce
+          >
             <MiniSlider plants={plantData2} />
           </Fade>
-          <Fade>
+          <Fade triggerOnce>
             <PlantClinicServices />
           </Fade>
-          <Fade direction="down">
+          <Fade
+            direction="down"
+            triggerOnce
+          >
             <PlantSlider
               sliderData={plantData3}
               title="گیاهان تزئینی"
             />
           </Fade>
-          <Fade direction="down">
+          <Fade
+            direction="down"
+            triggerOnce
+          >
             <MiniSlider plants={plantData4} />
           </Fade>
-          <Fade direction="down">
+          <Fade
+            direction="down"
+            triggerOnce
+          >
             <PlantSlider
               sliderData={plantData5}
               title="گیاهان کادویی"
@@ -329,7 +347,10 @@ function Intro() {
 function Support() {
   return (
     <section className="support">
-      <Fade direction="up">
+      <Fade
+        direction="up"
+        triggerOnce
+      >
         <div className="item">
           <div className="cover">
             <svg
@@ -352,7 +373,10 @@ function Support() {
           </p>
         </div>
       </Fade>
-      <Fade direction="down">
+      <Fade
+        direction="down"
+        triggerOnce
+      >
         <div className="item">
           <div className="cover">
             <svg
@@ -379,7 +403,10 @@ function Support() {
           </p>
         </div>
       </Fade>
-      <Fade direction="up">
+      <Fade
+        direction="up"
+        triggerOnce
+      >
         <div className="item">
           <div className="cover">
             <svg
